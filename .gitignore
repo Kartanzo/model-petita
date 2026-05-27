@@ -1,0 +1,17 @@
+node_modules
+.next
+.next/cache
+out
+dist
+build
+uploads
+*.log
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+coverage
+.cache

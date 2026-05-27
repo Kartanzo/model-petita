@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1e4ba8" />
+<title>Entrar · Petita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Nunito', 'system-ui', 'sans-serif'] },
+      colors: {
+        brand: {
+          50:  '#eef4ff',
+          100: '#dbe6ff',
+          200: '#bccffd',
+          300: '#8cabfa',
+          400: '#5b80f4',
+          500: '#3a5bec',
+          600: '#2942d8',
+          700: '#1e4ba8',  /* azul do logo Petita */
+          800: '#1a3a82',
+          900: '#192e63',
+        },
+        cream: '#fff8ec',
+        peach: '#ffd9c2',
+        mint:  '#cfeede',
+      }
+    }
+  }
+};
+</script>
+<style>
+  html, body { height: 100%; }
+  body {
+    background:
+      radial-gradient(60% 50% at 20% 0%, #dbe6ff 0%, transparent 60%),
+      radial-gradient(50% 40% at 95% 20%, #ffe4cf 0%, transparent 60%),
+      radial-gradient(70% 60% at 50% 100%, #d3eee0 0%, transparent 60%),
+      #f6f9ff;
+  }
+  /* Padrão sutil de pontinhos no fundo (combina com vibe infantil mas discreto) */
+  .dot-pattern {
+    background-image: radial-gradient(rgba(30,75,168,0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  /* Ilustração de "bolhinhas" flutuantes que dão movimento */
+  .bubble {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(1px);
+    opacity: .55;
+    animation: float 9s ease-in-out infinite;
+    will-change: transform;
+  }
+  .bubble.b2 { animation-duration: 12s; animation-delay: -3s; }
+  .bubble.b3 { animation-duration: 14s; animation-delay: -6s; }
+  .bubble.b4 { animation-duration: 11s; animation-delay: -2s; }
+  @keyframes float {
+    0%,100% { transform: translateY(0) translateX(0); }
+    50%     { transform: translateY(-18px) translateX(6px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bubble { animation: none; }
+  }
+  /* Card */
+  .glass {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: saturate(140%) blur(10px);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+  }
+  /* Input focus brand */
+  .input { transition: border-color .15s, box-shadow .15s, background .15s; }
+  .input:focus {
+    outline: none;
+    border-color: #1e4ba8;
+    box-shadow: 0 0 0 4px rgba(30,75,168,0.12);
+    background: #ffffff;
+  }
+  .btn-primary {
+    background: linear-gradient(180deg, #2a5ec0 0%, #1e4ba8 100%);
+    box-shadow: 0 6px 16px -6px rgba(30,75,168,0.45);
+  }
+  .btn-primary:hover { filter: brightness(1.06); }
+  .btn-primary:active { transform: translateY(1px); }
+
+  /* Acessibilidade — anel de foco visível */
+  :focus-visible { outline: 2px solid #1e4ba8; outline-offset: 2px; border-radius: 8px; }
+
+  /* Safe-areas iOS */
+  .safe-bottom { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+</style>
+</head>
+<body class="min-h-full font-sans text-brand-900 antialiased">
+
+  <!-- camada decorativa de fundo -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
+    <div class="absolute inset-0 dot-pattern opacity-60"></div>
+    <div class="bubble"    style="width:140px;height:140px;background:#bccffd;top:10%;left:8%;"></div>
+    <div class="bubble b2" style="width:90px;height:90px;background:#ffd9c2;top:55%;left:15%;"></div>
+    <div class="bubble b3" style="width:120px;height:120px;background:#cfeede;top:18%;right:10%;"></div>
+    <div class="bubble b4" style="width:70px;height:70px;background:#dbe6ff;bottom:18%;right:14%;"></div>
+  </div>
+
+  <main class="relative z-10 min-h-screen grid place-items-center px-5 py-8 safe-bottom">
+    <section class="w-full max-w-[400px]">
+
+      <!-- Card -->
+      <div class="glass rounded-3xl border border-white/60 shadow-[0_30px_80px_-30px_rgba(30,75,168,0.35)] p-6 sm:p-8">
+        <!-- Logo -->
+        <div class="flex justify-center mb-5">
+          <img src="logo-petita.png" alt="Petita" class="h-14 sm:h-16 select-none" draggable="false" />
+        </div>
+
+        <!-- Headline -->
+        <div class="text-center mb-6">
+          <h1 class="text-[22px] sm:text-[24px] font-extrabold tracking-tight text-brand-900">Bem-vindo de volta</h1>
+          <p class="text-sm text-brand-900/65 mt-1">Acesse o painel da Petita</p>
+        </div>
+
+        <!-- Form -->
+        <form id="loginForm" class="space-y-3.5" novalidate>
+          <label class="block">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-900/70">E-mail</span>
+            <div class="mt-1 relative">
+              <i data-lucide="mail" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-brand-900/45"></i>
+              <input
+                type="email" name="email" autocomplete="email" inputmode="email" required
+                placeholder="voce@empresa.com.br"
+                class="input w-full h-12 pl-10 pr-3.5 rounded-xl border border-brand-100 bg-white/90 text-[16px] placeholder:text-brand-900/35"
+              />
+            </div>
+          </label>
+
+          <label class="block">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-900/70">Senha</span>
+            <div class="mt-1 relative">
+              <i data-lucide="lock" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-brand-900/45"></i>
+              <input
+                id="pwd" type="password" name="password" autocomplete="current-password" required minlength="4"
+                placeholder="••••••••"
+                class="input w-full h-12 pl-10 pr-11 rounded-xl border border-brand-100 bg-white/90 text-[16px] placeholder:text-brand-900/35"
+              />
+              <button type="button" id="togglePwd" aria-label="Mostrar senha"
+                class="absolute right-1.5 top-1/2 -translate-y-1/2 w-9 h-9 grid place-items-center rounded-lg hover:bg-brand-50 transition-colors">
+                <i data-lucide="eye" class="w-[18px] h-[18px] text-brand-900/55"></i>
+              </button>
+            </div>
+          </label>
+
+          <div class="flex items-center justify-between pt-1">
+            <label class="inline-flex items-center gap-2 cursor-pointer text-sm text-brand-900/80 select-none">
+              <input type="checkbox" class="w-4 h-4 rounded border-brand-200 text-brand-700 focus:ring-brand-700" />
+              Lembrar-me
+            </label>
+            <a href="#" class="text-sm font-semibold text-brand-700 hover:underline">Esqueci a senha</a>
+          </div>
+
+          <button id="submitBtn" type="submit"
+            class="btn-primary w-full h-12 rounded-xl text-white font-bold text-[15px] tracking-wide transition active:duration-75 cursor-pointer mt-2">
+            Entrar
+          </button>
+
+          <p id="formError" class="hidden text-center text-[13px] text-rose-600 font-semibold pt-1"></p>
+        </form>
+
+      </div>
+
+      <!-- Rodapé -->
+      <div class="mt-5 text-center text-[12px] text-brand-900/55">
+        <p>© Petita · Um carinho a mais</p>
+        <p class="mt-1">
+          <a href="#" class="hover:underline">Termos</a>
+          <span class="px-1.5 opacity-50">·</span>
+          <a href="#" class="hover:underline">Privacidade</a>
+          <span class="px-1.5 opacity-50">·</span>
+          <a href="#" class="hover:underline">Suporte</a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    const pwd = document.getElementById('pwd');
+    const toggle = document.getElementById('togglePwd');
+    toggle.addEventListener('click', () => {
+      const visible = pwd.type === 'text';
+      pwd.type = visible ? 'password' : 'text';
+      toggle.setAttribute('aria-label', visible ? 'Mostrar senha' : 'Ocultar senha');
+      toggle.innerHTML = '';
+      const i = document.createElement('i');
+      i.setAttribute('data-lucide', visible ? 'eye' : 'eye-off');
+      i.className = 'w-[18px] h-[18px] text-brand-900/55';
+      toggle.appendChild(i);
+      lucide.createIcons();
+    });
+
+    const form = document.getElementById('loginForm');
+    const btn  = document.getElementById('submitBtn');
+    const err  = document.getElementById('formError');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      err.classList.add('hidden');
+      const email = form.email.value.trim();
+      const pass  = form.password.value;
+      if (!email || !pass) { err.textContent = 'Preencha e-mail e senha'; err.classList.remove('hidden'); return; }
+      btn.disabled = true;
+      btn.innerHTML = '<span class="inline-flex items-center gap-2"><span class="w-4 h-4 border-2 border-white/60 border-t-white rounded-full animate-spin"></span> Entrando…</span>';
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = 'Entrar';
+        err.textContent = 'Demo · qualquer email/senha funciona';
+        err.classList.remove('hidden');
+        err.classList.remove('text-rose-600');
+        err.classList.add('text-brand-700');
+      }, 900);
+    });
+  </script>
+</body>
+</html>
