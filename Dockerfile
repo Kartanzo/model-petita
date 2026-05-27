@@ -29,5 +29,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
+# SQL + migrate (rodam idempotente no boot)
+COPY --from=builder /app/db ./db
+COPY --from=builder /app/scripts/migrate.js ./scripts/migrate.js
+# pg precisa estar disponível no escopo do migrate (standalone já trace-includes pg p/ o app)
+COPY --from=deps /app/node_modules/pg ./node_modules/pg
+COPY --from=deps /app/node_modules/pg-pool ./node_modules/pg-pool
+COPY --from=deps /app/node_modules/pg-connection-string ./node_modules/pg-connection-string
+COPY --from=deps /app/node_modules/pg-types ./node_modules/pg-types
+COPY --from=deps /app/node_modules/pg-int8 ./node_modules/pg-int8
+COPY --from=deps /app/node_modules/pgpass ./node_modules/pgpass
+COPY --from=deps /app/node_modules/postgres-array ./node_modules/postgres-array
+COPY --from=deps /app/node_modules/postgres-bytea ./node_modules/postgres-bytea
+COPY --from=deps /app/node_modules/postgres-date ./node_modules/postgres-date
+COPY --from=deps /app/node_modules/postgres-interval ./node_modules/postgres-interval
+COPY --from=deps /app/node_modules/split2 ./node_modules/split2
+COPY --from=deps /app/node_modules/readable-stream ./node_modules/readable-stream
 EXPOSE 3000
-CMD ["node", "server.js"]
+CMD ["sh","-c","node scripts/migrate.js && node server.js"]
