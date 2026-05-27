@@ -9,6 +9,7 @@ import { fmtBRL } from '@/lib/utils';
 
 type Fam = { id: number; name: string };
 type Prod = { id: number; name: string; code: string; price: number; photo_url?: string; family_id: number; family_name?: string };
+type CatTpl = { id: number; name: string; description?: string | null; product_ids: number[]; options: any };
 
 export default function GerarCatalogoPage() {
   const toast = useToast();
@@ -22,19 +23,58 @@ export default function GerarCatalogoPage() {
   const [includeSpecs, setIncludeSpecs] = useState(false);
   const [loading, setLoading] = useState(false);
   const [loadingData, setLoadingData] = useState(true);
+  const [templates, setTemplates] = useState<CatTpl[]>([]);
+  const [tplId, setTplId] = useState<string>('');
 
   useEffect(() => {
     Promise.all([
       fetch('/api/families').then((r) => r.json()),
       fetch('/api/products?limit=500').then((r) => r.json()),
+      fetch('/api/catalog-templates').then((r) => r.json()).catch(() => []),
     ])
-      .then(([f, p]) => {
+      .then(([f, p, t]) => {
         setFams(Array.isArray(f) ? f : f.rows || []);
         setProds(Array.isArray(p) ? p : p.rows || []);
+        setTemplates(Array.isArray(t) ? t : []);
       })
       .catch(() => toast.push('Falha ao carregar dados', 'danger'))
       .finally(() => setLoadingData(false));
   }, []);
+
+  function loadTemplate(id: string) {
+    setTplId(id);
+    if (!id) return;
+    const t = templates.find((x) => String(x.id) === id);
+    if (!t) return;
+    setSelectedProds(new Set(t.product_ids || []));
+    const o = t.options || {};
+    if (o.order) setOrder(o.order);
+    if (typeof o.include_description === 'boolean') setIncludeDesc(o.include_description);
+    if (typeof o.include_specs === 'boolean') setIncludeSpecs(o.include_specs);
+    toast.push(`Modelo "${t.name}" carregado`, 'info');
+  }
+
+  async function saveAsTemplate() {
+    if (selectedProds.size === 0) { toast.push('Selecione produtos primeiro', 'info'); return; }
+    const name = window.prompt('Nome do modelo:');
+    if (!name) return;
+    const description = window.prompt('Descrição (opcional):') || '';
+    try {
+      const r = await fetch('/api/catalog-templates', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name, description,
+          product_ids: Array.from(selectedProds),
+          options: { order, include_description: includeDesc, include_specs: includeSpecs },
+        }),
+      });
+      if (!r.ok) throw new Error('Falha ao salvar modelo');
+      const t = await r.json();
+      setTemplates((prev) => [t, ...prev]);
+      setTplId(String(t.id));
+      toast.push('Modelo salvo!', 'success');
+    } catch (e: any) { toast.push(e.message, 'danger'); }
+  }
 
   const filtered = useMemo(() => {
     const s = search.trim().toLowerCase();
@@ -96,6 +136,20 @@ export default function GerarCatalogoPage() {
   return (
     <div className="space-y-4">
       <PageHeader title="Gerar catálogo" back="/catalogo" />
+
+      {/* Modelos salvos */}
+      <Card className="flex flex-wrap gap-3 items-end">
+        <div className="flex-1 min-w-[200px]">
+          <Select label="Carregar modelo" value={tplId} onChange={(e) => loadTemplate(e.target.value)}>
+            <option value="">— Nenhum —</option>
+            {templates.map((t) => (
+              <option key={t.id} value={t.id}>{t.name} ({t.product_ids?.length || 0})</option>
+            ))}
+          </Select>
+        </div>
+        <Button size="sm" variant="secondary" onClick={saveAsTemplate}>Salvar como modelo</Button>
+        <a href="/catalogo/modelos" className="text-sm font-bold text-brand-700 hover:underline pb-3">Gerenciar modelos →</a>
+      </Card>
 
       {/* Famílias */}
       <Card>

@@ -87,7 +87,7 @@ export default function LoginPage() {
             style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'saturate(140%) blur(10px)', WebkitBackdropFilter: 'saturate(140%) blur(10px)' }}
           >
             <div className="flex justify-center mb-5">
-              <img src="/logo-petita.png" alt="Petita" className="h-14 sm:h-16 select-none" draggable={false} />
+              <img src="/logo-petita.png" alt="Petita" className="h-20 sm:h-24 select-none" draggable={false} />
             </div>
 
             <div className="text-center mb-6">

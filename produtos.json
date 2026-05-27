@@ -19,30 +19,12 @@
   },
   {
     "linha": "linha-premium-cherie",
-    "nome": "Caneca c/ Alça",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-cherie-petita.jpg",
-    "image_local": "produtos/linha-premium-cherie-caneca-c-alca.jpg",
-    "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 37.5
-  },
-  {
-    "linha": "linha-premium-cherie",
     "nome": "Kit Refeição",
     "descricao": "",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
     "size_kb": 43.5
-  },
-  {
-    "linha": "linha-premium-cherie",
-    "nome": "Kit Refeição 2",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-2-linha-cherie-petita.jpg",
-    "image_local": "produtos/linha-premium-cherie-kit-refeicao-2.jpg",
-    "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 63.5
   },
   {
     "linha": "linha-premium-cherie",
@@ -60,7 +42,7 @@
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 42.0
+    "size_kb": 42
   },
   {
     "linha": "linha-premium-cherie",
@@ -70,24 +52,6 @@
     "image_local": "produtos/linha-premium-cherie-prendedor-de-chupeta.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
     "size_kb": 33.5
-  },
-  {
-    "linha": "linha-premium-duke",
-    "nome": "duke-cab-1",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/duke-cab-1.jpg",
-    "image_local": "produtos/linha-premium-duke-duke-cab-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 29.6
-  },
-  {
-    "linha": "linha-premium-duke",
-    "nome": "Copo Treinamento",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-duke-petita.jpg",
-    "image_local": "produtos/linha-premium-duke-copo-treinamento.jpg",
-    "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 39.3
   },
   {
     "linha": "linha-premium-duke",
@@ -106,15 +70,6 @@
     "image_local": "produtos/linha-premium-duke-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
     "size_kb": 44.3
-  },
-  {
-    "linha": "linha-premium-duke",
-    "nome": "Kit Refeição 2",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-2-linha-duke-petita.jpg",
-    "image_local": "produtos/linha-premium-duke-kit-refeicao-2.jpg",
-    "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 71.0
   },
   {
     "linha": "linha-premium-duke",
@@ -159,16 +114,7 @@
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-filhotes-menino-petita.jpg",
     "image_local": "produtos/linha-premium-filhotes-copo-treinamento.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 38.0
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Caneca c/ Alça",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-filhotes-menino-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-caneca-c-alca.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 39.6
+    "size_kb": 38
   },
   {
     "linha": "linha-premium-filhotes",
@@ -196,60 +142,6 @@
     "image_local": "produtos/linha-premium-filhotes-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
     "size_kb": 41.9
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Copo Treinamento",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-filhotes-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-copo-treinamento-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 38.3
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Caneca c/ Alça",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-filhotes-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-caneca-c-alca-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 37.2
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Kit Refeição",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-filhotes-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-kit-refeicao-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 51.3
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Kit Banho",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-filhotes-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-kit-banho-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 72.1
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Escova e Pente",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-filhotes-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-escova-e-pente-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 50.1
-  },
-  {
-    "linha": "linha-premium-filhotes",
-    "nome": "Prendedor de Chupeta",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-prendedor-de-chupeta-linha-filhotes-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-filhotes-prendedor-de-chupeta-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 34.0
   },
   {
     "linha": "linha-premium-petit",
@@ -289,15 +181,6 @@
   },
   {
     "linha": "linha-premium-petit",
-    "nome": "Kit Refeição 2",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-2-linha-petit-menino-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-kit-refeicao-2.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 59.1
-  },
-  {
-    "linha": "linha-premium-petit",
     "nome": "Kit Banho",
     "descricao": "",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-petit-menino-petita.jpg",
@@ -312,61 +195,7 @@
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 44.0
-  },
-  {
-    "linha": "linha-premium-petit",
-    "nome": "Copo Treinamento",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-petit-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-copo-treinamento-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 39.4
-  },
-  {
-    "linha": "linha-premium-petit",
-    "nome": "Caneca c/ Alça",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-petit-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-caneca-c-alca-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 39.7
-  },
-  {
-    "linha": "linha-premium-petit",
-    "nome": "Kit Refeição",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-petit-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-kit-refeicao-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 52.8
-  },
-  {
-    "linha": "linha-premium-petit",
-    "nome": "Kit Refeição 2",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-2-linha-petit-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-kit-refeicao-2-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 56.1
-  },
-  {
-    "linha": "linha-premium-petit",
-    "nome": "Kit Banho",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-petit-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-kit-banho-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 78.3
-  },
-  {
-    "linha": "linha-premium-petit",
-    "nome": "Escova e Pente",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-petit-menina-petita.jpg",
-    "image_local": "produtos/linha-premium-petit-escova-e-pente-1.jpg",
-    "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 47.4
+    "size_kb": 44
   },
   {
     "linha": "linha-plus",
@@ -423,51 +252,6 @@
     "size_kb": 42.9
   },
   {
-    "linha": "linha-plus",
-    "nome": "Copo Treinamento",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-plus-menina-petita.jpg",
-    "image_local": "produtos/linha-plus-copo-treinamento-1.jpg",
-    "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 35.5
-  },
-  {
-    "linha": "linha-plus",
-    "nome": "Caneca c/ Alça",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-plus-menina-petita.jpg",
-    "image_local": "produtos/linha-plus-caneca-c-alca-1.jpg",
-    "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 35.9
-  },
-  {
-    "linha": "linha-plus",
-    "nome": "Kit Refeição",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-plus-menina-petita.jpg",
-    "image_local": "produtos/linha-plus-kit-refeicao-1.jpg",
-    "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 55.7
-  },
-  {
-    "linha": "linha-plus",
-    "nome": "Kit Banho",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-plus-menina-petita.jpg",
-    "image_local": "produtos/linha-plus-kit-banho-1.jpg",
-    "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 70.5
-  },
-  {
-    "linha": "linha-plus",
-    "nome": "Escova e Pente",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-plus-menina-petita.jpg",
-    "image_local": "produtos/linha-plus-escova-e-pente-1.jpg",
-    "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 48.9
-  },
-  {
     "linha": "linha-refeicao",
     "nome": "refeicao-cab",
     "descricao": "",
@@ -484,15 +268,6 @@
     "image_local": "produtos/linha-refeicao-copo-treinamento-color-azul.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
     "size_kb": 36.9
-  },
-  {
-    "linha": "linha-refeicao",
-    "nome": "Copo Treinamento Color Rosa",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-copo-treinamento-color-rosa-petita.jpg",
-    "image_local": "produtos/linha-refeicao-copo-treinamento-color-rosa.jpg",
-    "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 34.4
   },
   {
     "linha": "linha-refeicao",
@@ -520,15 +295,6 @@
     "image_local": "produtos/linha-refeicao-kit-refeicao-menino.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
     "size_kb": 63.3
-  },
-  {
-    "linha": "linha-refeicao",
-    "nome": "Kit Refeição Menina",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-kit-refeicao-menina-petita.jpg",
-    "image_local": "produtos/linha-refeicao-kit-refeicao-menina.jpg",
-    "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 58.2
   },
   {
     "linha": "linha-refeicao",
@@ -667,15 +433,6 @@
   },
   {
     "linha": "acessorios",
-    "nome": "Escova Dupla Ação Limpa Bicos e Mamadeira Rosa",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-dupla-acao-bico-e-mamadeira-rosa-petita.jpg",
-    "image_local": "produtos/acessorios-escova-dupla-acao-limpa-bicos-e-mamadeira-rosa.jpg",
-    "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 37.9
-  },
-  {
-    "linha": "acessorios",
     "nome": "Kit Banho Azul",
     "descricao": "",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-kit-banho-azul-petita.jpg",
@@ -748,30 +505,12 @@
   },
   {
     "linha": "linha-anplas",
-    "nome": "Copo Treinamento Azul",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-copo-treinamentol-azul-claro-petita-1.jpg",
-    "image_local": "produtos/linha-anplas-copo-treinamento-azul-1.jpg",
-    "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 40.0
-  },
-  {
-    "linha": "linha-anplas",
-    "nome": "Copo Treinamento Rosa",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-copo-treinamentol-rosa-petita-1.jpg",
-    "image_local": "produtos/linha-anplas-copo-treinamento-rosa.jpg",
-    "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 39.0
-  },
-  {
-    "linha": "linha-anplas",
     "nome": "Redutor de Assento",
     "descricao": "",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-redutor-de-assento-petita.jpg",
     "image_local": "produtos/linha-anplas-redutor-de-assento.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 57.0
+    "size_kb": 57
   },
   {
     "linha": "linha-anplas",
@@ -825,7 +564,7 @@
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-porta-leite-em-po-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-porta-leite-em-po-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 30.0
+    "size_kb": 30
   },
   {
     "linha": "linha-anplas",
@@ -861,7 +600,7 @@
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 31.0
+    "size_kb": 31
   },
   {
     "linha": "linha-anplas",
@@ -871,15 +610,6 @@
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-c-espuma-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
     "size_kb": 32.9
-  },
-  {
-    "linha": "linha-anplas",
-    "nome": "Escova de Mamadeira e Bico c/ Espuma Rosa",
-    "descricao": "",
-    "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-c-espuma-rosa-petita.jpg",
-    "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-c-espuma-rosa.jpg",
-    "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 30.9
   },
   {
     "linha": "linha-anplas",
