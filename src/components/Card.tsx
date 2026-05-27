@@ -27,10 +27,10 @@ export function KpiCard({ label, value, delta, icon, tone = 'brand' }: KpiProps)
   };
   return (
     <Card className={cn('flex items-center gap-3', cardBg[tone])}>
-      {icon && <div className={cn('h-12 w-12 rounded-xl flex items-center justify-center', toneBg[tone])}>{icon}</div>}
+      {icon && <div className={cn('h-12 w-12 rounded-xl flex items-center justify-center shrink-0', toneBg[tone])}>{icon}</div>}
       <div className="flex-1 min-w-0">
-        <div className="text-xs font-bold uppercase tracking-wider text-muted">{label}</div>
-        <div className="text-2xl font-bold font-mono text-text truncate">{value}</div>
+        <div className="text-[11px] sm:text-[10px] font-bold uppercase tracking-wider text-muted">{label}</div>
+        <div className="text-[28px] sm:text-[24px] leading-tight font-bold font-mono tabular-nums text-text truncate">{value}</div>
         {delta && <div className="text-xs text-muted">{delta}</div>}
       </div>
     </Card>

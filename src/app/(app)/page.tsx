@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FileText, ShoppingCart, TrendingUp, DollarSign, Plus } from 'lucide-react';
+import { FileText, ShoppingCart, TrendingUp, DollarSign, Plus, BookOpen, Users } from 'lucide-react';
 import { q } from '@/lib/db';
 import { fmtBRL, fmtDate } from '@/lib/utils';
 import { Card, KpiCard } from '@/components/Card';
@@ -91,6 +91,27 @@ export default async function DashboardPage() {
       <div className="lg:hidden grid grid-cols-2 gap-3">
         <Link href="/orcamentos/novo"><Button className="w-full"><Plus className="h-4 w-4" /> Orçamento</Button></Link>
         <Link href="/pedidos/novo"><Button variant="secondary" className="w-full"><Plus className="h-4 w-4" /> Pedido</Button></Link>
+      </div>
+
+      <div className="lg:hidden grid grid-cols-2 gap-3">
+        <Link href="/catalogo">
+          <Card className="flex items-center gap-3 bg-cream">
+            <div className="h-11 w-11 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0"><BookOpen className="h-5 w-5" /></div>
+            <div className="min-w-0">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-muted">Atalho</div>
+              <div className="font-bold text-text truncate">Catálogo</div>
+            </div>
+          </Card>
+        </Link>
+        <Link href="/clientes">
+          <Card className="flex items-center gap-3 bg-mint/40">
+            <div className="h-11 w-11 rounded-xl bg-mint text-success flex items-center justify-center shrink-0"><Users className="h-5 w-5" /></div>
+            <div className="min-w-0">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-muted">Atalho</div>
+              <div className="font-bold text-text truncate">Clientes</div>
+            </div>
+          </Card>
+        </Link>
       </div>
     </div>
   );

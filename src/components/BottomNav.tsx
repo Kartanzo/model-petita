@@ -21,10 +21,10 @@ export function BottomNav() {
           const Icon = it.icon;
           return (
             <Link key={it.href} href={it.href} className={cn(
-              'flex flex-col items-center justify-center gap-1 h-16 text-xs font-semibold',
+              'flex flex-col items-center justify-center gap-1 h-16 text-[11px] sm:text-[10px] font-semibold',
               active ? 'text-brand-700' : 'text-muted',
             )}>
-              <Icon className="h-5 w-5" /> {it.label}
+              <Icon className="h-6 w-6 sm:h-5 sm:w-5" /> {it.label}
             </Link>
           );
         })}
