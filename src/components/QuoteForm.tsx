@@ -9,6 +9,12 @@ import { Pill, StatusPill } from './Pill';
 import { useToast } from './Toast';
 import { fmtBRL, fmtPct } from '@/lib/utils';
 
+function toDateInput(v: any): string {
+  if (!v) return '';
+  if (typeof v === 'string') return v.slice(0, 10);
+  try { const d = new Date(v); if (isNaN(d.getTime())) return ''; return d.toISOString().slice(0, 10); } catch { return ''; }
+}
+
 interface Item {
   product_id: number;
   product_name?: string;
@@ -31,7 +37,7 @@ export function QuoteForm({ initial, scope }: Props) {
   const toast = useToast();
   const isOrder = scope === 'order';
   const [data, setData] = useState<any>(initial || { items: [], payment_terms: '28/35/42 dias', delivery_terms: 'CIF' });
-  const [items, setItems] = useState<Item[]>(initial?.items?.map((i: any) => ({ ...i, qty: Number(i.qty), list_price: Number(i.list_price), unit_price: Number(i.unit_price) })) || []);
+  const [items, setItems] = useState<Item[]>((Array.isArray(initial?.items) ? initial.items : []).map((i: any) => ({ ...i, qty: Number(i.qty), list_price: Number(i.list_price), unit_price: Number(i.unit_price) })));
   const [customers, setCustomers] = useState<any[]>([]);
   const [products, setProducts] = useState<any[]>([]);
   const [pricing, setPricing] = useState<any>(null);
@@ -186,8 +192,8 @@ export function QuoteForm({ initial, scope }: Props) {
       <Card className="space-y-3">
         <Input label="Condições de pagamento" value={data.payment_terms || ''} onChange={(e) => setData({ ...data, payment_terms: e.target.value })} />
         <Input label="Condições de entrega" value={data.delivery_terms || ''} onChange={(e) => setData({ ...data, delivery_terms: e.target.value })} />
-        {!isOrder && <Input label="Válido até" type="date" value={data.valid_until?.slice(0, 10) || ''} onChange={(e) => setData({ ...data, valid_until: e.target.value })} />}
-        {isOrder && <Input label="Data de entrega" type="date" value={data.delivery_date?.slice(0, 10) || ''} onChange={(e) => setData({ ...data, delivery_date: e.target.value })} />}
+        {!isOrder && <Input label="Válido até" type="date" value={toDateInput(data.valid_until)} onChange={(e) => setData({ ...data, valid_until: e.target.value })} />}
+        {isOrder && <Input label="Data de entrega" type="date" value={toDateInput(data.delivery_date)} onChange={(e) => setData({ ...data, delivery_date: e.target.value })} />}
         <Textarea label="Observações" value={data.notes || ''} onChange={(e) => setData({ ...data, notes: e.target.value })} />
       </Card>
 

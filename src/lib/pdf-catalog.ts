@@ -1,5 +1,10 @@
 import puppeteer from 'puppeteer';
+import fs from 'fs';
+import path from 'path';
 import { q } from './db';
+
+const NAVY = '#1e4ba8';
+const CYAN = '#2aa3d9';
 
 export interface CatalogOpts {
   family_ids?: number[];
@@ -23,6 +28,29 @@ interface ProductRow {
   family_id: number;
 }
 
+const PUBLIC_DIR = path.resolve(process.cwd(), 'public');
+
+function loadImageBase64(photoUrl: string | null | undefined): string | null {
+  if (!photoUrl) return null;
+  try {
+    const rel = photoUrl.startsWith('/') ? photoUrl.slice(1) : photoUrl;
+    const full = path.join(PUBLIC_DIR, rel);
+    if (!fs.existsSync(full)) return null;
+    const buf = fs.readFileSync(full);
+    const ext = path.extname(full).toLowerCase().replace('.', '') || 'jpeg';
+    const mime = ext === 'jpg' ? 'jpeg' : ext;
+    return `data:image/${mime};base64,${buf.toString('base64')}`;
+  } catch { return null; }
+}
+
+function logoBase64(): string | null { return loadImageBase64('/logo-petita.png'); }
+
+function esc(s: any): string {
+  return String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] as string));
+}
+
+function fmt(n: any): string { return Number(n || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); }
+
 export async function generateCatalogPDF(opts: CatalogOpts = {}): Promise<Buffer> {
   const where: string[] = ['p.active = TRUE'];
   const params: any[] = [];
@@ -34,7 +62,7 @@ export async function generateCatalogPDF(opts: CatalogOpts = {}): Promise<Buffer
             COALESCE(p.technical_specs, '{}'::jsonb) AS technical_specs,
             f.name AS family_name, f.id AS family_id
        FROM petita.products p
-       JOIN petita.product_families f ON f.id = p.family_id
+       LEFT JOIN petita.product_families f ON f.id = p.family_id
       WHERE ${where.join(' AND ')}
       ORDER BY ${orderBy}`,
     params,
@@ -53,17 +81,13 @@ export async function generateCatalogPDF(opts: CatalogOpts = {}): Promise<Buffer
   try {
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: 'networkidle0' });
+    await page.evaluateHandle('document.fonts.ready');
     const pdf = await page.pdf({
       format: 'A4',
       printBackground: true,
-      margin: { top: '15mm', bottom: '15mm', left: '12mm', right: '12mm' },
-      displayHeaderFooter: true,
-      headerTemplate: `<div style="font-size:8px;color:#5d6b8a;width:100%;padding:0 12mm;display:flex;justify-content:space-between;align-items:center;">
-        <span style="font-weight:700;color:#1e4ba8;">Petita</span>
-        <span>Catálogo</span>
-        <span>Página <span class="pageNumber"></span>/<span class="totalPages"></span></span>
-      </div>`,
-      footerTemplate: `<div style="width:100%;height:4px;background:#1e4ba8;"></div>`,
+      margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
+      displayHeaderFooter: false,
+      preferCSSPageSize: true,
     });
     return Buffer.from(pdf);
   } finally {
@@ -71,190 +95,141 @@ export async function generateCatalogPDF(opts: CatalogOpts = {}): Promise<Buffer
   }
 }
 
-function defaultSpecs(p: ProductRow) {
-  return {
-    'Volume': '240 ml',
-    'Idade indicada': '0-6 meses',
-    'Material': 'Polipropileno BPA-free',
-    'Peso': '80 g',
-    'Dimensões': '18 × 5 × 5 cm',
+function defaultSpecsFor(p: ProductRow): Record<string, string> {
+  const name = (p.name || '').toLowerCase();
+  const fam = (p.family_name || '').toLowerCase();
+  const base: Record<string, string> = {
+    'Linha': p.family_name || '—',
+    'Categoria': fam.includes('anplas') ? 'Atacado' : 'Premium',
   };
+  if (name.includes('mamadeira')) {
+    Object.assign(base, { 'Tipo': 'Mamadeira', 'Capacidade': '240 ml', 'Material': 'Polipropileno', 'Idade': '0-6 meses', 'Peso': '80 g', 'Dimensões': '18 × 5 × 5 cm' });
+  } else if (name.includes('chupeta')) {
+    Object.assign(base, { 'Tipo': 'Chupeta', 'Bico': 'Silicone', 'Idade': '0-6m / 6m+', 'Peso': '15 g', 'Material': 'PP + silicone' });
+  } else if (name.includes('copo')) {
+    Object.assign(base, { 'Tipo': 'Copo de treinamento', 'Capacidade': '270 ml', 'Material': 'Polipropileno', 'Idade': '6m+' });
+  } else if (name.includes('kit')) {
+    Object.assign(base, { 'Tipo': 'Kit', 'Material': 'Multimaterial' });
+  } else {
+    Object.assign(base, { 'Tipo': 'Acessório', 'Material': 'Polipropileno' });
+  }
+  base['Observações'] = 'Livre de BPA · Livre de Ftalatos · Atóxico';
+  return base;
 }
 
-function specsTable(p: ProductRow): string {
-  const specs = (p.technical_specs && Object.keys(p.technical_specs).length) ? p.technical_specs : defaultSpecs(p);
+function specsRows(p: ProductRow): string {
   const labelMap: Record<string, string> = {
-    volume_ml: 'Volume', idade: 'Idade indicada', material: 'Material',
-    peso_g: 'Peso', dimensoes_cm: 'Dimensões',
+    volume_ml: 'Capacidade', idade: 'Idade indicada', material: 'Material',
+    peso_g: 'Peso', dimensoes_cm: 'Dimensões', cores: 'Cores',
   };
   const unitMap: Record<string, string> = { volume_ml: ' ml', peso_g: ' g', dimensoes_cm: ' cm' };
-  const entries = Object.entries(specs);
-  if (!entries.length) return '';
-  return `<table class="specs"><tbody>${entries.map(([k, v]) => `
-    <tr><th>${esc(labelMap[k] || k)}</th><td>${esc(v)}${unitMap[k] || ''}</td></tr>
-  `).join('')}</tbody></table>`;
+  const raw = p.technical_specs && typeof p.technical_specs === 'object' && Object.keys(p.technical_specs).length
+    ? p.technical_specs
+    : defaultSpecsFor(p);
+  // normalize keys to friendly labels
+  const norm: [string, string][] = [];
+  norm.push(['Linha', p.family_name || '—']);
+  for (const [k, v] of Object.entries(raw)) {
+    if (v === null || v === undefined || v === '') continue;
+    if (k === 'Linha') continue;
+    const label = labelMap[k] || k;
+    const unit = unitMap[k] || '';
+    norm.push([label, `${v}${unit}`]);
+  }
+  return norm.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('');
+}
+
+function renderProductPage(p: ProductRow, idx: number, total: number, opts: CatalogOpts): string {
+  const img = loadImageBase64(p.photo_url);
+  const photoHTML = img
+    ? `<img src="${img}" alt=""/>`
+    : `<div class="noimg">Sem imagem</div>`;
+  const showDesc = opts.include_description !== false;
+  const showSpecs = opts.include_specs !== false;
+  return `
+  <section class="page product">
+    <div class="left">
+      ${photoHTML}
+      <div class="overlay"><div class="prod-name">${esc(p.name)}</div></div>
+    </div>
+    <div class="right">
+      <span class="badge">${esc(p.family_name || '—')}</span>
+      <h2 class="title">${esc(p.name)}</h2>
+      <div class="sku">SKU ${esc(p.code)}</div>
+      ${showDesc && p.description ? `<p class="desc">${esc(p.description)}</p>` : ''}
+      ${showSpecs ? `
+        <div class="ft-label">Ficha técnica</div>
+        <div class="ft-bar"></div>
+        <table class="specs"><tbody>${specsRows(p)}</tbody></table>` : ''}
+      <div class="price">${fmt(p.price)}</div>
+    </div>
+    <div class="pagefoot">
+      <span>Petita — Catálogo ${new Date().getFullYear()}</span>
+      <span>Página ${idx + 1} de ${total}</span>
+    </div>
+  </section>`;
 }
 
 function renderHTML(company: any, products: ProductRow[], opts: CatalogOpts): string {
   const today = new Date().toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
-  const fmt = (n: number) => Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-  const cover = opts.cover_color ?? { from: '#1e4ba8', to: '#2aa3d9' };
-  const showSpecs = opts.include_specs !== false;
-  const showDesc = opts.include_description !== false;
-
-  // group by family
-  const groups: Record<string, ProductRow[]> = {};
-  products.forEach((p) => { (groups[p.family_name] ||= []).push(p); });
-  const familyEntries = Object.entries(groups);
-
-  // TOC only if >= 10 products
-  const toc = products.length >= 10 ? `
-    <section class="toc">
-      <h2>Sumário</h2>
-      <ul>
-        ${familyEntries.map(([fam, ps]) => `<li><span class="fam">${esc(fam)}</span><span class="dots"></span><span class="count">${ps.length} ${ps.length === 1 ? 'produto' : 'produtos'}</span></li>`).join('')}
-      </ul>
-    </section>` : '';
-
-  // chunk products: 2 per page
-  const cardsHtml: string[] = [];
-  for (let i = 0; i < products.length; i += 2) {
-    const pair = products.slice(i, i + 2);
-    cardsHtml.push(`
-      <div class="page">
-        ${pair.map((p) => renderProductCard(p, fmt, showDesc, showSpecs)).join('')}
-      </div>
-    `);
-  }
-
+  const cover = opts.cover_color ?? { from: NAVY, to: CYAN };
+  const logo = logoBase64();
+  const totalPages = products.length + 1;
+  const pages = products.map((p, i) => renderProductPage(p, i + 1, totalPages, opts)).join('');
   const address = company.address ? `<div>${esc(company.address)}</div>` : '';
-  const contact = [company.phone, company.email].filter(Boolean).map(esc).join(' · ');
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
-    @page { size: A4; margin: 15mm 12mm; }
-    * { box-sizing: border-box; }
-    body { font-family: 'Nunito','Helvetica Neue',Arial,sans-serif; color: #192e63; margin: 0; padding: 0; font-size: 11px; -webkit-print-color-adjust: exact; }
-    h1,h2,h3 { margin: 0; }
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif; color: #192e63; font-size: 11px; -webkit-print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; page-break-after: always; position: relative; overflow: hidden; background: #fff; }
+  .page:last-child { page-break-after: auto; }
 
-    /* COVER */
-    .cover {
-      position: relative;
-      height: 270mm;
-      background: linear-gradient(135deg, ${cover.from} 0%, ${cover.to} 100%);
-      color: #fff;
-      page-break-after: always;
-      overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center;
-      padding: 40px;
-    }
-    .cover::before {
-      content: '';
-      position: absolute; inset: 0;
-      background-image: radial-gradient(rgba(255,255,255,0.15) 1.5px, transparent 1.5px);
-      background-size: 26px 26px;
-      opacity: 0.55;
-    }
-    .cover .logo { width: 180px; height: auto; filter: brightness(0) invert(1); margin-bottom: 28px; position: relative; z-index: 1; }
-    .cover h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.5px; position: relative; z-index: 1; }
-    .cover .sub { font-size: 16px; margin-top: 12px; opacity: 0.92; position: relative; z-index: 1; font-weight: 500; }
-    .cover .tpl { font-size: 20px; margin-top: 8px; font-weight: 700; position: relative; z-index: 1; }
-    .cover .date { font-size: 13px; margin-top: 6px; opacity: 0.8; position: relative; z-index: 1; }
-    .cover .footer { position: absolute; bottom: 30px; left: 0; right: 0; text-align: center; font-size: 11px; opacity: 0.9; z-index: 1; }
-    .cover .footer .brand { font-weight: 800; font-size: 13px; margin-bottom: 4px; }
+  /* COVER */
+  .cover { background: linear-gradient(135deg, ${cover.from} 0%, ${cover.to} 100%); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; }
+  .cover::before { content:''; position:absolute; inset:0; background-image: radial-gradient(rgba(255,255,255,0.18) 1.5px, transparent 1.5px); background-size: 26px 26px; opacity: 0.55; }
+  .cover .logo { width: 180px; filter: brightness(0) invert(1); margin-bottom: 28px; position: relative; z-index: 1; }
+  .cover h1 { font-size: 48px; font-weight: 800; letter-spacing: -0.5px; position: relative; z-index: 1; margin: 0; }
+  .cover .sub { font-size: 16px; margin-top: 14px; opacity: 0.95; position: relative; z-index: 1; font-weight: 500; }
+  .cover .tpl { font-size: 20px; margin-top: 8px; font-weight: 700; position: relative; z-index: 1; }
+  .cover .date { font-size: 13px; margin-top: 6px; opacity: 0.85; position: relative; z-index: 1; }
+  .cover .footer { position: absolute; bottom: 22mm; left: 0; right: 0; text-align: center; font-size: 11px; opacity: 0.92; z-index: 1; }
+  .cover .footer .brand { font-weight: 800; font-size: 13px; margin-bottom: 4px; letter-spacing: 0.5px; }
 
-    /* TOC */
-    .toc { padding: 30px 10px; page-break-after: always; }
-    .toc h2 { color: #1e4ba8; font-size: 28px; font-weight: 800; border-bottom: 3px solid #1e4ba8; padding-bottom: 10px; margin-bottom: 20px; }
-    .toc ul { list-style: none; padding: 0; margin: 0; }
-    .toc li { display: flex; align-items: baseline; gap: 8px; padding: 10px 0; font-size: 13px; border-bottom: 1px dashed #cfd8e8; }
-    .toc .fam { font-weight: 700; color: #1e4ba8; }
-    .toc .dots { flex: 1; border-bottom: 1.5px dotted #b6c2d8; transform: translateY(-3px); }
-    .toc .count { color: #5d6b8a; font-size: 11px; }
-
-    /* PAGE */
-    .page { page-break-after: always; padding: 4px 0; }
-    .page:last-child { page-break-after: auto; }
-
-    /* PRODUCT CARD */
-    .product {
-      display: flex; gap: 14px;
-      padding: 14px;
-      border: 1px solid #e5ebf5;
-      border-radius: 14px;
-      margin-bottom: 12px;
-      page-break-inside: avoid;
-      break-inside: avoid;
-      background: #fff;
-      min-height: 120mm;
-    }
-    .product .photo {
-      flex: 0 0 40%;
-      max-width: 40%;
-      border-radius: 10px;
-      background: #f6f9ff;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden;
-      box-shadow: 0 6px 20px -8px rgba(30,75,168,0.25);
-    }
-    .product .photo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-    .product .info { flex: 1; display: flex; flex-direction: column; position: relative; }
-    .product .badge {
-      display: inline-block; align-self: flex-start;
-      background: #eef4ff; color: #1e4ba8;
-      padding: 3px 10px; border-radius: 999px;
-      font-size: 9.5px; font-weight: 700; letter-spacing: 0.3px;
-      text-transform: uppercase; margin-bottom: 8px;
-    }
-    .product h2 { color: #1e4ba8; font-size: 18px; font-weight: 800; line-height: 1.2; }
-    .product .sku { font-family: 'Courier New',monospace; font-size: 9.5px; color: #8595b3; margin-top: 4px; }
-    .product .desc { font-size: 11px; color: #4a5878; margin: 10px 0; line-height: 1.45; }
-    .specs { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 10px; }
-    .specs th, .specs td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #eef2f9; }
-    .specs th { color: #5d6b8a; font-weight: 700; width: 40%; }
-    .specs td { color: #192e63; }
-    .product .price {
-      position: absolute; bottom: 0; right: 0;
-      font-family: 'Courier New', monospace;
-      font-size: 22px; font-weight: 800;
-      color: #1e4ba8;
-    }
+  /* PRODUCT PAGE */
+  .product { display: grid; grid-template-columns: 1fr 1fr; }
+  .product .left { position: relative; background: #f6f9ff; overflow: hidden; }
+  .product .left img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .product .left .noimg { width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#8595b3; font-size:14px; }
+  .product .left .overlay { position: absolute; left: 0; right: 0; bottom: 0; height: 35%; background: linear-gradient(to top, rgba(25,46,99,0.85) 0%, rgba(25,46,99,0) 100%); display: flex; align-items: flex-end; padding: 14mm; }
+  .product .left .overlay .prod-name { color: #fff; font-size: 22px; font-weight: 300; line-height: 1.15; letter-spacing: -0.3px; }
+  .product .right { padding: 18mm; display: flex; flex-direction: column; position: relative; }
+  .product .badge { display: inline-block; align-self: flex-start; background: ${NAVY}; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 9px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+  .product .title { color: ${NAVY}; font-size: 24px; font-weight: 700; line-height: 1.15; margin: 0 0 4px 0; }
+  .product .sku { font-family: 'Courier New', monospace; font-size: 9.5px; color: #8595b3; letter-spacing: 1px; }
+  .product .desc { font-size: 11px; color: #4a5878; line-height: 1.55; margin: 12px 0; }
+  .product .ft-label { color: ${NAVY}; font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-top: 14px; }
+  .product .ft-bar { width: 60px; height: 3px; background: ${NAVY}; margin-top: 4px; margin-bottom: 10px; }
+  .product .specs { width: 100%; border-collapse: collapse; font-size: 11px; }
+  .product .specs th { text-align: left; padding: 6px 0; color: #8595b3; font-family: 'Courier New', monospace; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; width: 38%; border-bottom: 1px solid #e5ebf5; }
+  .product .specs td { text-align: left; padding: 6px 0; color: #192e63; font-size: 11px; border-bottom: 1px solid #e5ebf5; }
+  .product .price { position: absolute; right: 18mm; bottom: 22mm; color: ${NAVY}; font-family: 'Courier New', monospace; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
+  .product .pagefoot { position: absolute; bottom: 8mm; left: 18mm; right: 18mm; padding-top: 4px; border-top: 1px solid ${NAVY}; display: flex; justify-content: space-between; font-size: 9px; color: #8595b3; letter-spacing: 0.5px; }
   </style></head><body>
 
-  <section class="cover">
-    <img src="${esc(company.logo_url || '/logo-petita.png')}" class="logo" alt="Petita"/>
+  <section class="page cover">
+    ${logo ? `<img src="${logo}" class="logo" alt="Petita"/>` : ''}
     <h1>Catálogo de Produtos</h1>
     ${opts.template_name ? `<div class="tpl">${esc(opts.template_name)}</div>` : ''}
     <div class="sub">${esc(company.name || 'Petita')}</div>
     <div class="date">${today}</div>
     <div class="footer">
-      <div class="brand">Petita · Um carinho a mais</div>
+      <div class="brand">PETITA · UM CARINHO A MAIS</div>
       ${address}
-      ${contact ? `<div>${contact}</div>` : ''}
     </div>
   </section>
 
-  ${toc}
-  ${cardsHtml.join('')}
+  ${pages}
   </body></html>`;
-}
-
-function renderProductCard(p: ProductRow, fmt: (n: number) => string, showDesc: boolean, showSpecs: boolean): string {
-  return `
-    <article class="product">
-      <div class="photo"><img src="${esc(p.photo_url || '')}" alt=""/></div>
-      <div class="info">
-        <span class="badge">${esc(p.family_name)}</span>
-        <h2>${esc(p.name)}</h2>
-        <div class="sku">SKU: ${esc(p.code)}</div>
-        ${showDesc && p.description ? `<div class="desc">${esc(p.description)}</div>` : ''}
-        ${showSpecs ? specsTable(p) : ''}
-        <div class="price">${fmt(p.price)}</div>
-      </div>
-    </article>
-  `;
-}
-
-function esc(s: any): string {
-  return String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] as string));
 }
