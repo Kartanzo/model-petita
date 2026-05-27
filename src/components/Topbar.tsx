@@ -10,7 +10,7 @@ export function Topbar({ title }: { title?: string }) {
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo-petita.png" alt="Petita" width={32} height={32} className="rounded-lg" />
         </Link>
-        <div className="flex-1 text-center font-bold text-text truncate">{title || 'Petita'}</div>
+        <div className="flex-1 text-center font-bold text-text truncate">{title || ''}</div>
         <Link href="/config" className="h-9 w-9 rounded-full bg-brand-50 flex items-center justify-center text-brand-700">
           <UserIcon className="h-4 w-4" />
         </Link>

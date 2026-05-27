@@ -8,7 +8,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const fieldBase =
-  'w-full h-12 rounded-xl border border-border bg-panel px-3 text-[15px] text-text placeholder:text-muted/60 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none transition';
+  'w-full h-12 rounded-xl border border-border bg-panel px-3 text-[15px] text-text placeholder:text-muted/60 focus:border-brand-700 focus:ring-4 focus:ring-brand-700/15 outline-none transition';
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   { label, error, helper, className, ...rest },

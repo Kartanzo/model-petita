@@ -388,3 +388,6 @@ INSERT INTO petita.customers (type,name,trade_name,doc,email,phone,whatsapp,addr
 ('PF','Loja Filhotes e Bebes','Loja Filhotes e Bebes','919.991.919-27','loja-filhotes-e-bebes@example.com.br','(11) 93212-2311','(11) 93212-2311','Rua das Flores','128','','Centro','Londrina','PR','01000-000','marketplace',29000,'Cliente seed dummy',TRUE),
 ('PJ','Mercadinho Infantil Bom Preco','Mercadinho Infantil Bom Preco','62.375.152/0001-26','mercadinho-infantil-bom-preco@example.com.br','(11) 93383-3644','(11) 93383-3644','Rua das Flores','129','','Centro','Guarulhos','SP','01000-000','pet shop',30000,'Cliente seed dummy',TRUE)
 ON CONFLICT DO NOTHING;
+
+-- Corrige photo_url legados sem barra inicial
+UPDATE petita.products SET photo_url = '/' || photo_url WHERE photo_url IS NOT NULL AND photo_url NOT LIKE '/%';

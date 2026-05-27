@@ -10,6 +10,7 @@ const Schema = z.object({
   family_ids: z.array(z.number().int().positive()).optional(),
   product_ids: z.array(z.number().int().positive()).optional(),
   include_description: z.boolean().optional(),
+  include_specs: z.boolean().optional(),
   order: z.enum(['family', 'name', 'price']).optional(),
 });
 

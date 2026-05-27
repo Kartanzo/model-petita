@@ -11,7 +11,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantCls: Record<Variant, string> = {
-  primary: 'bg-gradient-to-r from-brand-700 to-brand-500 text-white hover:from-brand-900 hover:to-brand-700 shadow-soft',
+  primary: 'bg-gradient-to-b from-[#2a5ec0] to-[#1e4ba8] text-white hover:brightness-110 shadow-[0_6px_16px_-6px_rgba(30,75,168,0.45)]',
   secondary: 'bg-panel text-brand-700 border border-border hover:bg-brand-50',
   ghost: 'text-brand-700 hover:bg-brand-50',
   danger: 'bg-danger text-white hover:bg-red-700',

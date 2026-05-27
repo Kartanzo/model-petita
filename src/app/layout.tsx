@@ -1,5 +1,13 @@
 import type { Metadata, Viewport } from 'next';
+import { Nunito } from 'next/font/google';
 import './globals.css';
+
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-nunito',
+});
 
 export const metadata: Metadata = {
   title: 'Petita — Sistema de Vendas',
@@ -17,8 +25,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body className="min-h-screen antialiased">
+    <html lang="pt-BR" className={nunito.variable}>
+      <body className={`${nunito.className} min-h-screen antialiased`}>
         {children}
         <script
           dangerouslySetInnerHTML={{
