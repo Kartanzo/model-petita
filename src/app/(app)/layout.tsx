@@ -14,7 +14,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         <Sidebar />
         <div className="flex-1 min-w-0 flex flex-col">
           <Topbar />
-          <main className="flex-1 p-4 lg:p-8 pb-28 lg:pb-8 max-w-md sm:max-w-xl lg:max-w-[1200px] w-full mx-auto">
+          <main className="flex-1 p-4 lg:p-8 pb-32 lg:pb-8 max-w-md sm:max-w-xl lg:max-w-[1200px] w-full mx-auto">
             {children}
           </main>
           <BottomNav />

@@ -8,9 +8,10 @@
 :root { color-scheme: light; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 html, body { background: #fbfaf6; color: #192e63; font-family: 'Nunito', system-ui, sans-serif; font-size: 16px; }
-input, select, textarea { font-size: 16px; }
+/* anti-zoom iOS: !important pra não ser sobrescrito por utility class do Tailwind */
+input, select, textarea, button { font-size: 16px !important; }
 @media (min-width: 768px) {
-  input, select, textarea { font-size: 14px; }
+  input, select, textarea, button { font-size: 14px !important; }
 }
 h1, h2 { font-weight: 700; }
 * { -webkit-tap-highlight-color: transparent; }

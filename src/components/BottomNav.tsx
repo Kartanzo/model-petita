@@ -14,17 +14,19 @@ const items = [
 export function BottomNav() {
   const pathname = usePathname() || '';
   return (
-    <nav className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-panel border-t border-border safe-bottom">
+    <nav className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-panel border-t border-border safe-bottom shadow-[0_-4px_16px_-8px_rgba(30,75,168,0.15)]">
       <div className="grid grid-cols-4">
         {items.map((it) => {
           const active = pathname.startsWith(it.href);
           const Icon = it.icon;
           return (
             <Link key={it.href} href={it.href} className={cn(
-              'flex flex-col items-center justify-center gap-1 h-16 text-[11px] sm:text-[10px] font-semibold',
-              active ? 'text-brand-700' : 'text-muted',
+              'flex flex-col items-center justify-center gap-1.5 h-20 text-[12px] font-semibold transition-colors relative',
+              active ? 'text-brand-700' : 'text-muted hover:text-brand-700',
             )}>
-              <Icon className="h-6 w-6 sm:h-5 sm:w-5" /> {it.label}
+              {active && <span className="absolute top-0 left-1/2 -translate-x-1/2 w-10 h-[3px] rounded-b-full bg-brand-700" />}
+              <Icon className="h-7 w-7" strokeWidth={active ? 2.4 : 2} />
+              <span>{it.label}</span>
             </Link>
           );
         })}
