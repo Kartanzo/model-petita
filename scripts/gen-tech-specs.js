@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* Reads produtos.json, enriches each product with realistic `technical_specs` and `descricao`
    inferred from the product NAME (mamadeira/chupeta/copo/etc.), and writes back to produtos.json.
+   Each product gets EXPLICIT altura_cm, comprimento_cm, largura_cm, peso_g fields.
 */
 const fs = require('fs');
 const path = require('path');
@@ -29,21 +30,26 @@ function detectColor(nome) {
   return 'Variadas';
 }
 
+function dimsMamadeira(vol) {
+  if (vol <= 60)  return { altura_cm: 12, largura_cm: 4,   comprimento_cm: 4,   peso_g: 80 };
+  if (vol <= 140) return { altura_cm: 16, largura_cm: 5,   comprimento_cm: 5,   peso_g: 110 };
+  if (vol <= 240) return { altura_cm: 18, largura_cm: 6,   comprimento_cm: 6,   peso_g: 140 };
+  return            { altura_cm: 19, largura_cm: 6.5, comprimento_cm: 6.5, peso_g: 150 };
+}
+
 function specsMamadeira(nome) {
   const vol = detectVolume(nome) || (nome.match(/240/) ? 240 : nome.match(/140/) ? 140 : nome.match(/60/) ? 60 : 240);
   const bico = /silicone/i.test(nome) ? 'Silicone' : /pvc/i.test(nome) ? 'PVC' : /cristal/i.test(nome) ? 'Cristal' : 'Silicone';
   const idade = vol <= 60 ? '0-3 meses' : vol <= 140 ? '0-6 meses' : '6 meses +';
-  const peso = vol <= 60 ? 80 : vol <= 140 ? 110 : vol <= 240 ? 140 : 160;
-  const altura = vol <= 60 ? 12 : vol <= 140 ? 16 : vol <= 240 ? 18 : 19;
-  const diam = vol <= 60 ? 4 : 5;
+  const d = dimsMamadeira(vol);
   return {
     tipo: 'Mamadeira',
     capacidade_ml: vol,
     bico,
     material: 'Polipropileno (PP)',
     idade,
-    peso_g: peso,
-    dimensoes_cm: `${altura} × ${diam} × ${diam}`,
+    ...d,
+    dimensoes_cm: `${d.altura_cm} × ${d.largura_cm} × ${d.comprimento_cm}`,
     cor: detectColor(nome),
     ...COMMON,
   };
@@ -58,8 +64,11 @@ function specsChupeta(nome) {
     bico,
     material: 'PP + Silicone medicinal',
     idade,
+    altura_cm: 5,
+    largura_cm: 4,
+    comprimento_cm: 4,
     peso_g: 15,
-    dimensoes_cm: '6 × 4 × 3',
+    dimensoes_cm: '5 × 4 × 4',
     ventilada,
     cor: detectColor(nome),
     ...COMMON,
@@ -69,14 +78,18 @@ function specsChupeta(nome) {
 function specsCopo(nome) {
   const alca = /al[çc]a/i.test(nome) ? 'Sim' : 'Não';
   const vol = detectVolume(nome) || 270;
+  const larg = alca === 'Sim' ? 10 : 8;
   return {
     tipo: /caneca/i.test(nome) ? 'Caneca de treinamento' : 'Copo de treinamento',
     capacidade_ml: vol,
     bico: 'Silicone antivazamento',
     material: 'Polipropileno (PP)',
     idade: '6 meses +',
+    altura_cm: 14,
+    largura_cm: larg,
+    comprimento_cm: 8,
     peso_g: 100,
-    dimensoes_cm: '14 × 8 × 8',
+    dimensoes_cm: `14 × ${larg} × 8`,
     alca,
     cor: detectColor(nome),
     ...COMMON,
@@ -87,8 +100,11 @@ function specsPrendedor() {
   return {
     tipo: 'Prendedor de chupeta',
     material: 'PP + Silicone',
+    altura_cm: 1,
+    largura_cm: 2,
     comprimento_cm: 22,
     peso_g: 12,
+    dimensoes_cm: '1 × 2 × 22',
     fechamento: 'Mola',
     ...COMMON,
   };
@@ -98,8 +114,11 @@ function specsEscovaMamadeira() {
   return {
     tipo: 'Escova para mamadeira',
     material: 'PP + Nylon',
+    altura_cm: 4,
+    largura_cm: 6,
     comprimento_cm: 30,
-    peso_g: 35,
+    peso_g: 25,
+    dimensoes_cm: '4 × 6 × 30',
     ...COMMON,
   };
 }
@@ -108,7 +127,11 @@ function specsGenerico(nome, fam) {
   return {
     tipo: 'Acessório',
     material: 'Polipropileno (PP)',
+    altura_cm: 6,
+    largura_cm: 5,
+    comprimento_cm: 8,
     peso_g: 30,
+    dimensoes_cm: '6 × 5 × 8',
     linha: fam || '—',
     ...COMMON,
   };
@@ -116,11 +139,12 @@ function specsGenerico(nome, fam) {
 
 function buildSpecs(p) {
   const n = (p.nome || '').toLowerCase();
+  if (n.includes('mamadeira') && n.includes('escova')) return specsEscovaMamadeira();
   if (n.includes('mamadeira')) return specsMamadeira(p.nome);
-  if (n.includes('chupeta')) return specsChupeta(p.nome);
+  if (n.includes('chupeta') && !n.includes('prendedor')) return specsChupeta(p.nome);
   if (n.includes('copo') || n.includes('caneca')) return specsCopo(p.nome);
   if (n.includes('prendedor')) return specsPrendedor();
-  if (n.includes('escova') && n.includes('mamadeira')) return specsEscovaMamadeira();
+  if (n.includes('escova')) return specsEscovaMamadeira();
   return specsGenerico(p.nome, p.linha);
 }
 
@@ -128,7 +152,7 @@ function buildDesc(p, specs) {
   const nome = p.nome || 'Produto';
   const linha = p.linha ? p.linha.replace(/-/g, ' ') : '';
   const tipo = (specs.tipo || '').toLowerCase();
-  if (tipo.includes('mamadeira')) {
+  if (tipo.includes('mamadeira') && !tipo.includes('escova')) {
     return `${nome} da linha ${linha}, com capacidade de ${specs.capacidade_ml} ml e bico ${String(specs.bico).toLowerCase()}. Indicada para a faixa etária ${specs.idade}, é fabricada em ${specs.material}, livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.`;
   }
   if (tipo.includes('chupeta')) {

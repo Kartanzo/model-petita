@@ -118,28 +118,29 @@ function defaultSpecsFor(p: ProductRow): Record<string, string> {
 }
 
 function specsRows(p: ProductRow): string {
-  const labelMap: Record<string, string> = {
-    volume_ml: 'Capacidade', idade: 'Idade indicada', material: 'Material',
-    peso_g: 'Peso', dimensoes_cm: 'Dimensões', cores: 'Cores',
-  };
-  const unitMap: Record<string, string> = { volume_ml: ' ml', peso_g: ' g', dimensoes_cm: ' cm' };
-  const raw = p.technical_specs && typeof p.technical_specs === 'object' && Object.keys(p.technical_specs).length
+  const raw: any = p.technical_specs && typeof p.technical_specs === 'object' && Object.keys(p.technical_specs).length
     ? p.technical_specs
     : defaultSpecsFor(p);
-  // normalize keys to friendly labels
-  const norm: [string, string][] = [];
-  norm.push(['Linha', p.family_name || '—']);
-  for (const [k, v] of Object.entries(raw)) {
-    if (v === null || v === undefined || v === '') continue;
-    if (k === 'Linha') continue;
-    const label = labelMap[k] || k;
-    const unit = unitMap[k] || '';
-    norm.push([label, `${v}${unit}`]);
-  }
-  return norm.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('');
+  const rows: [string, string][] = [];
+  const push = (k: string, v: any, suffix = '') => {
+    if (v === null || v === undefined || v === '') return;
+    rows.push([k, `${v}${suffix}`]);
+  };
+  push('Família', p.family_name || raw.linha);
+  push('Material', raw.material);
+  push('Idade indicada', raw.idade);
+  push('Capacidade', raw.capacidade_ml ?? raw.volume_ml, ' ml');
+  push('Altura', raw.altura_cm, ' cm');
+  push('Comprimento', raw.comprimento_cm, ' cm');
+  push('Largura', raw.largura_cm, ' cm');
+  push('Peso', raw.peso_g, ' g');
+  push('Cor', raw.cor || raw.cores);
+  push('Bico', raw.bico);
+  rows.push(['Certificações', 'INMETRO · BPA-free · Atóxico']);
+  return rows.map(([k, v]) => `<tr><td class="k">${esc(k)}</td><td class="v">${esc(v)}</td></tr>`).join('');
 }
 
-function renderProductPage(p: ProductRow, idx: number, total: number, opts: CatalogOpts): string {
+function renderProductPage(p: ProductRow, idx: number, total: number, opts: CatalogOpts, logo: string | null): string {
   const img = loadImageBase64(p.photo_url);
   const photoHTML = img
     ? `<img src="${img}" alt=""/>`
@@ -148,6 +149,7 @@ function renderProductPage(p: ProductRow, idx: number, total: number, opts: Cata
   const showSpecs = opts.include_specs !== false;
   return `
   <section class="page product">
+    ${logo ? `<img src="${logo}" class="page-logo" alt="Petita"/>` : ''}
     <div class="left product-photo">
       ${photoHTML}
     </div>
@@ -174,7 +176,7 @@ function renderHTML(company: any, products: ProductRow[], opts: CatalogOpts): st
   const cover = opts.cover_color ?? { from: NAVY, to: CYAN };
   const logo = logoBase64();
   const totalPages = products.length + 1;
-  const pages = products.map((p, i) => renderProductPage(p, i + 1, totalPages, opts)).join('');
+  const pages = products.map((p, i) => renderProductPage(p, i + 1, totalPages, opts, logo)).join('');
   const address = company.address ? `<div>${esc(company.address)}</div>` : '';
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
@@ -188,7 +190,8 @@ function renderHTML(company: any, products: ProductRow[], opts: CatalogOpts): st
   /* COVER */
   .cover { background: linear-gradient(135deg, ${cover.from} 0%, ${cover.to} 100%); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; }
   .cover::before { content:''; position:absolute; inset:0; background-image: radial-gradient(rgba(255,255,255,0.18) 1.5px, transparent 1.5px); background-size: 26px 26px; opacity: 0.55; }
-  .cover .logo { width: 180px; filter: brightness(0) invert(1); margin-bottom: 28px; position: relative; z-index: 1; }
+  .cover .logo-panel { background: #ffffff; padding: 28px 56px; border-radius: 24px; box-shadow: 0 12px 40px rgba(0,0,0,0.18); display: inline-flex; margin-bottom: 32px; position: relative; z-index: 1; }
+  .cover .logo-panel img { height: 110px; width: auto; display: block; }
   .cover h1 { font-size: 48px; font-weight: 800; letter-spacing: -0.5px; position: relative; z-index: 1; margin: 0; }
   .cover .sub { font-size: 16px; margin-top: 14px; opacity: 0.95; position: relative; z-index: 1; font-weight: 500; }
   .cover .tpl { font-size: 20px; margin-top: 8px; font-weight: 700; position: relative; z-index: 1; }
@@ -208,15 +211,17 @@ function renderHTML(company: any, products: ProductRow[], opts: CatalogOpts): st
   .product .desc { font-size: 11px; color: #4a5878; line-height: 1.55; margin: 12px 0; }
   .product .ft-label { color: ${NAVY}; font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-top: 14px; }
   .product .ft-bar { width: 60px; height: 3px; background: ${NAVY}; margin-top: 4px; margin-bottom: 10px; }
-  .product .specs { width: 100%; border-collapse: collapse; font-size: 11px; }
-  .product .specs th { text-align: left; padding: 6px 0; color: #8595b3; font-family: 'Courier New', monospace; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; width: 38%; border-bottom: 1px solid #e5ebf5; }
-  .product .specs td { text-align: left; padding: 6px 0; color: #192e63; font-size: 11px; border-bottom: 1px solid #e5ebf5; }
+  .product .specs { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 10pt; }
+  .product .specs td { padding: 6px 8px; border-bottom: 1px solid #e2e8f0; }
+  .product .specs td.k { color: #475569; font-weight: 500; width: 40%; text-transform: none; }
+  .product .specs td.v { color: #0f172a; font-weight: 600; }
+  .product .page-logo { position: absolute; top: 10mm; right: 14mm; height: 50px; width: auto; z-index: 2; }
   .product .price { position: absolute; right: 18mm; bottom: 22mm; color: ${NAVY}; font-family: 'Courier New', monospace; font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
   .product .pagefoot { position: absolute; bottom: 8mm; left: 18mm; right: 18mm; padding-top: 4px; border-top: 1px solid ${NAVY}; display: flex; justify-content: space-between; font-size: 9px; color: #8595b3; letter-spacing: 0.5px; }
   </style></head><body>
 
   <section class="page cover">
-    ${logo ? `<img src="${logo}" class="logo" alt="Petita"/>` : ''}
+    ${logo ? `<div class="logo-panel"><img src="${logo}" alt="Petita"/></div>` : ''}
     <h1>Catálogo de Produtos</h1>
     ${opts.template_name ? `<div class="tpl">${esc(opts.template_name)}</div>` : ''}
     <div class="sub">${esc(company.name || 'Petita')}</div>

@@ -10,7 +10,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-cherie",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -29,6 +33,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -47,7 +54,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-cherie",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -63,7 +74,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-cherie",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -71,36 +86,39 @@
   {
     "linha": "linha-premium-cherie",
     "nome": "Escova e Pente",
-    "descricao": "Escova e Pente da linha linha premium cherie, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
     "size_kb": 42,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "linha-premium-cherie",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "linha-premium-cherie",
     "nome": "Prendedor de Chupeta",
-    "descricao": "Prendedor de Chupeta com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
+    "descricao": "Prendedor de Chupeta com bico undefined em silicone medicinal, desenvolvida para bebês a partir de undefined. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-prendedor-de-chupeta-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-prendedor-de-chupeta.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
     "size_kb": 33.5,
     "technical_specs": {
-      "tipo": "Chupeta",
-      "bico": "Ortodôntico",
-      "material": "PP + Silicone medicinal",
-      "idade": "0-6 meses",
-      "peso_g": 15,
-      "dimensoes_cm": "6 × 4 × 3",
-      "ventilada": "Não",
-      "cor": "Variadas",
+      "tipo": "Prendedor de chupeta",
+      "material": "PP + Silicone",
+      "altura_cm": 1,
+      "largura_cm": 2,
+      "comprimento_cm": 22,
+      "peso_g": 12,
+      "dimensoes_cm": "1 × 2 × 22",
+      "fechamento": "Mola",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -118,8 +136,11 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 10,
+      "comprimento_cm": 8,
       "peso_g": 100,
-      "dimensoes_cm": "14 × 8 × 8",
+      "dimensoes_cm": "14 × 10 × 8",
       "alca": "Sim",
       "cor": "Variadas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
@@ -136,7 +157,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-duke",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -152,7 +177,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-duke",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -160,36 +189,39 @@
   {
     "linha": "linha-premium-duke",
     "nome": "Escova e Pente",
-    "descricao": "Escova e Pente da linha linha premium duke, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
     "size_kb": 40.1,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "linha-premium-duke",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "linha-premium-duke",
     "nome": "Prendedor de Chupeta",
-    "descricao": "Prendedor de Chupeta com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
+    "descricao": "Prendedor de Chupeta com bico undefined em silicone medicinal, desenvolvida para bebês a partir de undefined. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-prendedor-de-chupeta-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-prendedor-de-chupeta.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
     "size_kb": 35.1,
     "technical_specs": {
-      "tipo": "Chupeta",
-      "bico": "Ortodôntico",
-      "material": "PP + Silicone medicinal",
-      "idade": "0-6 meses",
-      "peso_g": 15,
-      "dimensoes_cm": "6 × 4 × 3",
-      "ventilada": "Não",
-      "cor": "Variadas",
+      "tipo": "Prendedor de chupeta",
+      "material": "PP + Silicone",
+      "altura_cm": 1,
+      "largura_cm": 2,
+      "comprimento_cm": 22,
+      "peso_g": 12,
+      "dimensoes_cm": "1 × 2 × 22",
+      "fechamento": "Mola",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -204,7 +236,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-filhotes",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -223,6 +259,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -241,7 +280,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-filhotes",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -257,7 +300,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-filhotes",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -265,16 +312,19 @@
   {
     "linha": "linha-premium-filhotes",
     "nome": "Escova e Pente",
-    "descricao": "Escova e Pente da linha linha premium filhotes, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-filhotes-menino-petita.jpg",
     "image_local": "produtos/linha-premium-filhotes-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
     "size_kb": 41.9,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "linha-premium-filhotes",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -289,7 +339,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-petit",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -308,6 +362,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -329,8 +386,11 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 10,
+      "comprimento_cm": 8,
       "peso_g": 100,
-      "dimensoes_cm": "14 × 8 × 8",
+      "dimensoes_cm": "14 × 10 × 8",
       "alca": "Sim",
       "cor": "Variadas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
@@ -347,7 +407,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-petit",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -363,7 +427,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-premium-petit",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -371,16 +439,19 @@
   {
     "linha": "linha-premium-petit",
     "nome": "Escova e Pente",
-    "descricao": "Escova e Pente da linha linha premium petit, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
     "size_kb": 44,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "linha-premium-petit",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -395,7 +466,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-plus",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -414,6 +489,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -435,8 +513,11 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 10,
+      "comprimento_cm": 8,
       "peso_g": 100,
-      "dimensoes_cm": "14 × 8 × 8",
+      "dimensoes_cm": "14 × 10 × 8",
       "alca": "Sim",
       "cor": "Variadas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
@@ -453,7 +534,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-plus",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -469,7 +554,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-plus",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -477,16 +566,19 @@
   {
     "linha": "linha-plus",
     "nome": "Escova e Pente",
-    "descricao": "Escova e Pente da linha linha plus, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-plus-menino-petita.jpg",
     "image_local": "produtos/linha-plus-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
     "size_kb": 42.9,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "linha-plus",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -501,7 +593,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-refeicao",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -520,6 +616,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -541,6 +640,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -562,6 +664,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -580,7 +685,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-refeicao",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -599,6 +708,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -620,6 +732,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -641,8 +756,11 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 10,
+      "comprimento_cm": 8,
       "peso_g": 100,
-      "dimensoes_cm": "14 × 8 × 8",
+      "dimensoes_cm": "14 × 10 × 8",
       "alca": "Sim",
       "cor": "Azul",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
@@ -662,8 +780,11 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 10,
+      "comprimento_cm": 8,
       "peso_g": 100,
-      "dimensoes_cm": "14 × 8 × 8",
+      "dimensoes_cm": "14 × 10 × 8",
       "alca": "Sim",
       "cor": "Rosa",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
@@ -680,7 +801,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -688,40 +813,40 @@
   {
     "linha": "acessorios",
     "nome": "Prendedor de Chupeta Boton Azul",
-    "descricao": "Prendedor de Chupeta Boton Azul com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
+    "descricao": "Prendedor de Chupeta Boton Azul com bico undefined em silicone medicinal, desenvolvida para bebês a partir de undefined. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-prendedor-de-chupeta-azul-petita.jpg",
     "image_local": "produtos/acessorios-prendedor-de-chupeta-boton-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
     "size_kb": 44.6,
     "technical_specs": {
-      "tipo": "Chupeta",
-      "bico": "Ortodôntico",
-      "material": "PP + Silicone medicinal",
-      "idade": "0-6 meses",
-      "peso_g": 15,
-      "dimensoes_cm": "6 × 4 × 3",
-      "ventilada": "Não",
-      "cor": "Azul",
+      "tipo": "Prendedor de chupeta",
+      "material": "PP + Silicone",
+      "altura_cm": 1,
+      "largura_cm": 2,
+      "comprimento_cm": 22,
+      "peso_g": 12,
+      "dimensoes_cm": "1 × 2 × 22",
+      "fechamento": "Mola",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "acessorios",
     "nome": "Prendedor de Chupeta Boton Rosa",
-    "descricao": "Prendedor de Chupeta Boton Rosa com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
+    "descricao": "Prendedor de Chupeta Boton Rosa com bico undefined em silicone medicinal, desenvolvida para bebês a partir de undefined. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-prendedor-de-chupeta-rosa-petita.jpg",
     "image_local": "produtos/acessorios-prendedor-de-chupeta-boton-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
     "size_kb": 25.3,
     "technical_specs": {
-      "tipo": "Chupeta",
-      "bico": "Ortodôntico",
-      "material": "PP + Silicone medicinal",
-      "idade": "0-6 meses",
-      "peso_g": 15,
-      "dimensoes_cm": "6 × 4 × 3",
-      "ventilada": "Não",
-      "cor": "Rosa",
+      "tipo": "Prendedor de chupeta",
+      "material": "PP + Silicone",
+      "altura_cm": 1,
+      "largura_cm": 2,
+      "comprimento_cm": 22,
+      "peso_g": 12,
+      "dimensoes_cm": "1 × 2 × 22",
+      "fechamento": "Mola",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -736,7 +861,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -752,7 +881,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -768,7 +901,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -784,7 +921,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -800,7 +941,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -808,52 +953,57 @@
   {
     "linha": "acessorios",
     "nome": "Escova e Pente Azul",
-    "descricao": "Escova e Pente Azul da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente Azul com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-e-pente-azul-petita.jpg",
     "image_local": "produtos/acessorios-escova-e-pente-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
     "size_kb": 46.6,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "acessorios",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "acessorios",
     "nome": "Escova e Pente Rosa",
-    "descricao": "Escova e Pente Rosa da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
+    "descricao": "Escova e Pente Rosa com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-e-pente-rosa-petita.jpg",
     "image_local": "produtos/acessorios-escova-e-pente-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
     "size_kb": 39.9,
     "technical_specs": {
-      "tipo": "Acessório",
-      "material": "Polipropileno (PP)",
-      "peso_g": 30,
-      "linha": "acessorios",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "acessorios",
     "nome": "Escova Dupla Ação Limpa Bicos e Mamadeira Azul",
-    "descricao": "Escova Dupla Ação Limpa Bicos e Mamadeira Azul da linha acessorios, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
+    "descricao": "Escova Dupla Ação Limpa Bicos e Mamadeira Azul com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-dupla-acao-bico-e-mamadeira-azul-petita.jpg",
     "image_local": "produtos/acessorios-escova-dupla-acao-limpa-bicos-e-mamadeira-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
     "size_kb": 37.5,
     "technical_specs": {
-      "tipo": "Mamadeira",
-      "capacidade_ml": 240,
-      "bico": "Silicone",
-      "material": "Polipropileno (PP)",
-      "idade": "6 meses +",
-      "peso_g": 140,
-      "dimensoes_cm": "18 × 5 × 5",
-      "cor": "Azul",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
@@ -868,7 +1018,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -884,7 +1038,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -900,7 +1058,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "acessorios",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -916,7 +1078,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -935,6 +1101,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -956,6 +1125,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -977,6 +1149,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -998,6 +1173,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -1016,7 +1194,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1032,7 +1214,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1048,7 +1234,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1067,6 +1257,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -1088,6 +1281,9 @@
       "bico": "Silicone antivazamento",
       "material": "Polipropileno (PP)",
       "idade": "6 meses +",
+      "altura_cm": 14,
+      "largura_cm": 8,
+      "comprimento_cm": 8,
       "peso_g": 100,
       "dimensoes_cm": "14 × 8 × 8",
       "alca": "Não",
@@ -1106,7 +1302,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1122,7 +1322,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1138,7 +1342,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1154,7 +1362,11 @@
     "technical_specs": {
       "tipo": "Acessório",
       "material": "Polipropileno (PP)",
+      "altura_cm": 6,
+      "largura_cm": 5,
+      "comprimento_cm": 8,
       "peso_g": 30,
+      "dimensoes_cm": "6 × 5 × 8",
       "linha": "linha-anplas",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
@@ -1162,100 +1374,95 @@
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira e Bico Azul",
-    "descricao": "Escova de Mamadeira e Bico Azul da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
+    "descricao": "Escova de Mamadeira e Bico Azul com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
     "size_kb": 32.8,
     "technical_specs": {
-      "tipo": "Mamadeira",
-      "capacidade_ml": 240,
-      "bico": "Silicone",
-      "material": "Polipropileno (PP)",
-      "idade": "6 meses +",
-      "peso_g": 140,
-      "dimensoes_cm": "18 × 5 × 5",
-      "cor": "Azul",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira e Bico Rosa",
-    "descricao": "Escova de Mamadeira e Bico Rosa da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
+    "descricao": "Escova de Mamadeira e Bico Rosa com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
     "size_kb": 31,
     "technical_specs": {
-      "tipo": "Mamadeira",
-      "capacidade_ml": 240,
-      "bico": "Silicone",
-      "material": "Polipropileno (PP)",
-      "idade": "6 meses +",
-      "peso_g": 140,
-      "dimensoes_cm": "18 × 5 × 5",
-      "cor": "Rosa",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira e Bico c/ Espuma Azul",
-    "descricao": "Escova de Mamadeira e Bico c/ Espuma Azul da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
+    "descricao": "Escova de Mamadeira e Bico c/ Espuma Azul com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-c-espuma-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-c-espuma-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
     "size_kb": 32.9,
     "technical_specs": {
-      "tipo": "Mamadeira",
-      "capacidade_ml": 240,
-      "bico": "Silicone",
-      "material": "Polipropileno (PP)",
-      "idade": "6 meses +",
-      "peso_g": 140,
-      "dimensoes_cm": "18 × 5 × 5",
-      "cor": "Azul",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira c/ Espuma e Cabo Removível Azul",
-    "descricao": "Escova de Mamadeira c/ Espuma e Cabo Removível Azul da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
+    "descricao": "Escova de Mamadeira c/ Espuma e Cabo Removível Azul com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-c-espuma-cabo-removivel-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-c-espuma-e-cabo-removivel-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
     "size_kb": 33.2,
     "technical_specs": {
-      "tipo": "Mamadeira",
-      "capacidade_ml": 240,
-      "bico": "Silicone",
-      "material": "Polipropileno (PP)",
-      "idade": "6 meses +",
-      "peso_g": 140,
-      "dimensoes_cm": "18 × 5 × 5",
-      "cor": "Azul",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira c/ Espuma e Cabo Removível Rosa",
-    "descricao": "Escova de Mamadeira c/ Espuma e Cabo Removível Rosa da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
+    "descricao": "Escova de Mamadeira c/ Espuma e Cabo Removível Rosa com cerdas em nylon macio que higienizam por completo o interior de mamadeiras e bicos. Cabo ergonômico em PP de fácil manuseio.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-c-espuma-cabo-removivel-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-c-espuma-e-cabo-removivel-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
     "size_kb": 32.9,
     "technical_specs": {
-      "tipo": "Mamadeira",
-      "capacidade_ml": 240,
-      "bico": "Silicone",
-      "material": "Polipropileno (PP)",
-      "idade": "6 meses +",
-      "peso_g": 140,
-      "dimensoes_cm": "18 × 5 × 5",
-      "cor": "Rosa",
+      "tipo": "Escova para mamadeira",
+      "material": "PP + Nylon",
+      "altura_cm": 4,
+      "largura_cm": 6,
+      "comprimento_cm": 30,
+      "peso_g": 25,
+      "dimensoes_cm": "4 × 6 × 30",
       "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
     }
   }

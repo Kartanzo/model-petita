@@ -1,6 +1,6 @@
 // Petita SW — só cacheia assets estáticos. Nunca intercepta navegação / API.
 // Isso evita o erro "redirected response was used for a request whose redirect mode is not follow".
-const CACHE = 'petita-v9';
+const CACHE = 'petita-v10';
 const ASSETS = ['/logo-petita.png', '/manifest.json', '/icons/icon-192.png', '/icons/icon-512.png'];
 
 self.addEventListener('install', (event) => {
