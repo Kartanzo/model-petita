@@ -219,6 +219,33 @@ END$$;
 -- SEEDS
 -- =============================================================
 
+-- Migração PRIMEIRO: realinha slugs legados ANTES de inserir os novos (evita unique conflict)
+-- Cada UPDATE só roda se o slug-alvo ainda não existir (NOT EXISTS guard)
+DO $$
+DECLARE
+  pair RECORD;
+BEGIN
+  FOR pair IN SELECT * FROM (VALUES
+    ('premium-cherie','linha-premium-cherie'),
+    ('premium-duke','linha-premium-duke'),
+    ('premium-filhotes','linha-premium-filhotes'),
+    ('premium-petit','linha-premium-petit'),
+    ('premium-plus','linha-plus'),
+    ('refeicao','linha-refeicao'),
+    ('anplas','linha-anplas')
+  ) AS t(old_slug,new_slug)
+  LOOP
+    IF EXISTS (SELECT 1 FROM petita.product_families WHERE slug=pair.old_slug)
+       AND NOT EXISTS (SELECT 1 FROM petita.product_families WHERE slug=pair.new_slug) THEN
+      UPDATE petita.product_families SET slug=pair.new_slug WHERE slug=pair.old_slug;
+    ELSIF EXISTS (SELECT 1 FROM petita.product_families WHERE slug=pair.old_slug)
+          AND EXISTS (SELECT 1 FROM petita.product_families WHERE slug=pair.new_slug) THEN
+      -- legado e novo coexistem: apaga o legado (produtos serão re-seedados)
+      DELETE FROM petita.product_families WHERE slug=pair.old_slug;
+    END IF;
+  END LOOP;
+END $$;
+
 INSERT INTO petita.product_families (slug,name,display_order) VALUES
 ('linha-premium-cherie','Premium Cherie',1),
 ('linha-premium-duke','Premium Duke',2),
@@ -229,15 +256,6 @@ INSERT INTO petita.product_families (slug,name,display_order) VALUES
 ('acessorios','Acessórios',7),
 ('linha-anplas','Anplas',8)
 ON CONFLICT (slug) DO NOTHING;
-
--- Migração: realinha slugs legados pré-existentes para o padrão "linha-*"
-UPDATE petita.product_families SET slug='linha-premium-cherie'   WHERE slug='premium-cherie';
-UPDATE petita.product_families SET slug='linha-premium-duke'     WHERE slug='premium-duke';
-UPDATE petita.product_families SET slug='linha-premium-filhotes' WHERE slug='premium-filhotes';
-UPDATE petita.product_families SET slug='linha-premium-petit'    WHERE slug='premium-petit';
-UPDATE petita.product_families SET slug='linha-plus'             WHERE slug='premium-plus';
-UPDATE petita.product_families SET slug='linha-refeicao'         WHERE slug='refeicao';
-UPDATE petita.product_families SET slug='linha-anplas'           WHERE slug='anplas';
 
 INSERT INTO petita.family_rules (family_id,max_discount_pct,min_margin_pct,default_markup_pct,override_role)
 SELECT id, 15, 25, 200, 'admin' FROM petita.product_families
