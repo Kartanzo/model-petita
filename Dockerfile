@@ -35,4 +35,4 @@ COPY --from=builder /app/scripts/migrate.js ./scripts/migrate.js
 # pg só pro migrate (o app já tem via standalone trace)
 RUN npm init -y >/dev/null 2>&1 && npm install pg --omit=optional --no-audit --no-fund
 EXPOSE 3000
-CMD ["sh","-c","node scripts/migrate.js && node server.js"]
+CMD ["sh","-c","node scripts/migrate.js || echo '[boot] migrate falhou, subindo server mesmo assim'; exec node server.js"]
