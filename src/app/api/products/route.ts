@@ -12,10 +12,10 @@ export async function GET(req: NextRequest) {
     if (family) { params.push(parseInt(family, 10)); where.push(`p.family_id=$${params.length}`); }
     const q1 = sp.get('q');
     if (q1) { params.push(`%${q1}%`); where.push(`(p.name ILIKE $${params.length} OR p.code ILIKE $${params.length})`); }
-    const sql = `SELECT p.*, f.name AS family_name FROM petita.products p
+    const sql = `SELECT DISTINCT ON (p.code) p.*, f.name AS family_name FROM petita.products p
                  LEFT JOIN petita.product_families f ON f.id=p.family_id
                  ${where.length ? 'WHERE ' + where.join(' AND ') : ''}
-                 ORDER BY p.name LIMIT 500`;
+                 ORDER BY p.code, p.family_id, p.name LIMIT 500`;
     const { rows } = await q(sql, params);
     return ok(rows);
   } catch (e) { return handleError(e); }

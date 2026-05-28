@@ -36,14 +36,14 @@ const rows = products.map((p) => {
   const [lo, hi] = priceFor(p.linha);
   const price = +(lo + Math.random() * (hi - lo)).toFixed(2);
   const cost = +(price * (0.45 + Math.random() * 0.2)).toFixed(2);
-  const specs = {
-    volume_ml: 60 + Math.round(Math.random() * 240),
-    idade: ['0-6m', '6-12m', '12-24m', '0-3a'][Math.floor(Math.random() * 4)],
-    material: ['Polipropileno BPA-free', 'Silicone medicinal', 'PP+TR', 'Algodão orgânico'][Math.floor(Math.random() * 4)],
-    peso_g: 40 + Math.round(Math.random() * 160),
-    dimensoes_cm: `${10 + Math.round(Math.random() * 15)}x${4 + Math.round(Math.random() * 6)}x${4 + Math.round(Math.random() * 6)}`,
-  };
-  return `('${c}','${esc(pretty(p.nome))}',(SELECT id FROM petita.product_families WHERE slug='${esc(p.linha)}'),'${esc(p.descricao || '')}','${esc(JSON.stringify(specs))}'::jsonb,${cost},${price},'UN','/${esc(p.image_local)}',TRUE)`;
+  const specs = p.technical_specs && typeof p.technical_specs === 'object' && Object.keys(p.technical_specs).length
+    ? p.technical_specs
+    : {
+        material: 'Polipropileno BPA-free',
+        observacoes: 'Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO',
+      };
+  const descricao = p.descricao && String(p.descricao).trim() ? p.descricao : '';
+  return `('${c}','${esc(pretty(p.nome))}',(SELECT id FROM petita.product_families WHERE slug='${esc(p.linha)}'),'${esc(descricao)}','${esc(JSON.stringify(specs))}'::jsonb,${cost},${price},'UN','/${esc(p.image_local)}',TRUE)`;
 });
 
 const insertBlock = [

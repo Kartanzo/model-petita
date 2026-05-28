@@ -19,8 +19,8 @@ export function Sidebar() {
   const pathname = usePathname() || '';
   return (
     <aside className="hidden lg:flex w-60 shrink-0 flex-col bg-brand-700 text-white h-screen sticky top-0">
-      <div className="p-4 flex items-center justify-center border-b border-white/10">
-        <Image src="/logo-petita.png" alt="Petita" width={48} height={48} className="rounded-lg bg-white/95 p-1" />
+      <div className="pt-6 pb-4 px-4 flex items-center justify-center border-b border-white/10">
+        <Image src="/logo-petita.png" alt="Petita" width={160} height={48} className="h-12 w-auto rounded-lg bg-white/95 p-1" />
       </div>
       <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
         {items.map((it) => {

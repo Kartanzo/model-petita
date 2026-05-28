@@ -34,7 +34,9 @@ export default function GerarCatalogoPage() {
     ])
       .then(([f, p, t]) => {
         setFams(Array.isArray(f) ? f : f.rows || []);
-        setProds(Array.isArray(p) ? p : p.rows || []);
+        const rawProds: Prod[] = Array.isArray(p) ? p : p.rows || [];
+        const deduped = Array.from(new Map(rawProds.map((x) => [x.code, x])).values());
+        setProds(deduped);
         setTemplates(Array.isArray(t) ? t : []);
       })
       .catch(() => toast.push('Falha ao carregar dados', 'danger'))
@@ -219,7 +221,7 @@ export default function GerarCatalogoPage() {
             const sel = selectedProds.has(p.id);
             return (
               <button
-                key={p.id}
+                key={p.code}
                 onClick={() => toggleProd(p.id)}
                 className={`text-left relative rounded-2xl border-2 bg-panel p-3 transition-all hover:-translate-y-0.5 ${
                   sel ? 'border-brand-700 shadow-[0_8px_24px_-12px_rgba(30,75,168,0.45)]' : 'border-border'

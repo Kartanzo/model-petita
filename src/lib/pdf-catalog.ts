@@ -148,9 +148,8 @@ function renderProductPage(p: ProductRow, idx: number, total: number, opts: Cata
   const showSpecs = opts.include_specs !== false;
   return `
   <section class="page product">
-    <div class="left">
+    <div class="left product-photo">
       ${photoHTML}
-      <div class="overlay"><div class="prod-name">${esc(p.name)}</div></div>
     </div>
     <div class="right">
       <span class="badge">${esc(p.family_name || '—')}</span>
@@ -199,11 +198,9 @@ function renderHTML(company: any, products: ProductRow[], opts: CatalogOpts): st
 
   /* PRODUCT PAGE */
   .product { display: grid; grid-template-columns: 1fr 1fr; }
-  .product .left { position: relative; background: #f6f9ff; overflow: hidden; }
-  .product .left img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .product .left .noimg { width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#8595b3; font-size:14px; }
-  .product .left .overlay { position: absolute; left: 0; right: 0; bottom: 0; height: 35%; background: linear-gradient(to top, rgba(25,46,99,0.85) 0%, rgba(25,46,99,0) 100%); display: flex; align-items: flex-end; padding: 14mm; }
-  .product .left .overlay .prod-name { color: #fff; font-size: 22px; font-weight: 300; line-height: 1.15; letter-spacing: -0.3px; }
+  .product .product-photo { width: 100%; height: 100%; background: #f8f9fb; display: flex; align-items: center; justify-content: center; padding: 16mm; box-sizing: border-box; overflow: hidden; }
+  .product .product-photo img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .product .product-photo .noimg { width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#8595b3; font-size:14px; }
   .product .right { padding: 18mm; display: flex; flex-direction: column; position: relative; }
   .product .badge { display: inline-block; align-self: flex-start; background: ${NAVY}; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 9px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
   .product .title { color: ${NAVY}; font-size: 24px; font-weight: 700; line-height: 1.15; margin: 0 0 4px 0; }

@@ -2,631 +2,1261 @@
   {
     "linha": "linha-premium-cherie",
     "nome": "cherie-cab",
-    "descricao": "",
+    "descricao": "cherie-cab da linha linha premium cherie, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/cherie-cab.jpg",
     "image_local": "produtos/linha-premium-cherie-cherie-cab.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 36.7
+    "size_kb": 36.7,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-cherie",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-cherie",
     "nome": "Copo Treinamento",
-    "descricao": "",
+    "descricao": "Copo Treinamento ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-copo-treinamento.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 39.1
+    "size_kb": 39.1,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-cherie",
     "nome": "Kit Refeição",
-    "descricao": "",
+    "descricao": "Kit Refeição da linha linha premium cherie, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 43.5
+    "size_kb": 43.5,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-cherie",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-cherie",
     "nome": "Kit Banho",
-    "descricao": "",
+    "descricao": "Kit Banho da linha linha premium cherie, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-kit-banho.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 51.5
+    "size_kb": 51.5,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-cherie",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-cherie",
     "nome": "Escova e Pente",
-    "descricao": "",
+    "descricao": "Escova e Pente da linha linha premium cherie, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 42
+    "size_kb": 42,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-cherie",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-cherie",
     "nome": "Prendedor de Chupeta",
-    "descricao": "",
+    "descricao": "Prendedor de Chupeta com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-prendedor-de-chupeta-linha-cherie-petita.jpg",
     "image_local": "produtos/linha-premium-cherie-prendedor-de-chupeta.jpg",
     "source_url": "https://petita.com.br/linha-premium-cherie/",
-    "size_kb": 33.5
+    "size_kb": 33.5,
+    "technical_specs": {
+      "tipo": "Chupeta",
+      "bico": "Ortodôntico",
+      "material": "PP + Silicone medicinal",
+      "idade": "0-6 meses",
+      "peso_g": 15,
+      "dimensoes_cm": "6 × 4 × 3",
+      "ventilada": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-duke",
     "nome": "Caneca c/ Alça",
-    "descricao": "",
+    "descricao": "Caneca c/ Alça ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-caneca-c-alca.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 41.2
+    "size_kb": 41.2,
+    "technical_specs": {
+      "tipo": "Caneca de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Sim",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-duke",
     "nome": "Kit Refeição",
-    "descricao": "",
+    "descricao": "Kit Refeição da linha linha premium duke, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 44.3
+    "size_kb": 44.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-duke",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-duke",
     "nome": "Kit Banho",
-    "descricao": "",
+    "descricao": "Kit Banho da linha linha premium duke, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-kit-banho.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 53.9
+    "size_kb": 53.9,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-duke",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-duke",
     "nome": "Escova e Pente",
-    "descricao": "",
+    "descricao": "Escova e Pente da linha linha premium duke, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 40.1
+    "size_kb": 40.1,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-duke",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-duke",
     "nome": "Prendedor de Chupeta",
-    "descricao": "",
+    "descricao": "Prendedor de Chupeta com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-prendedor-de-chupeta-linha-duke-petita.jpg",
     "image_local": "produtos/linha-premium-duke-prendedor-de-chupeta.jpg",
     "source_url": "https://petita.com.br/linha-premium-duke/",
-    "size_kb": 35.1
+    "size_kb": 35.1,
+    "technical_specs": {
+      "tipo": "Chupeta",
+      "bico": "Ortodôntico",
+      "material": "PP + Silicone medicinal",
+      "idade": "0-6 meses",
+      "peso_g": 15,
+      "dimensoes_cm": "6 × 4 × 3",
+      "ventilada": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-filhotes",
     "nome": "filhotes-cab",
-    "descricao": "",
+    "descricao": "filhotes-cab da linha linha premium filhotes, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/filhotes-cab.jpg",
     "image_local": "produtos/linha-premium-filhotes-filhotes-cab.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 48.2
+    "size_kb": 48.2,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-filhotes",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-filhotes",
     "nome": "Copo Treinamento",
-    "descricao": "",
+    "descricao": "Copo Treinamento ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-filhotes-menino-petita.jpg",
     "image_local": "produtos/linha-premium-filhotes-copo-treinamento.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 38
+    "size_kb": 38,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-filhotes",
     "nome": "Kit Refeição",
-    "descricao": "",
+    "descricao": "Kit Refeição da linha linha premium filhotes, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-filhotes-menino-petita.jpg",
     "image_local": "produtos/linha-premium-filhotes-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 50.8
+    "size_kb": 50.8,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-filhotes",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-filhotes",
     "nome": "Kit Banho",
-    "descricao": "",
+    "descricao": "Kit Banho da linha linha premium filhotes, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-filhotes-menino-petita.jpg",
     "image_local": "produtos/linha-premium-filhotes-kit-banho.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 66.3
+    "size_kb": 66.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-filhotes",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-filhotes",
     "nome": "Escova e Pente",
-    "descricao": "",
+    "descricao": "Escova e Pente da linha linha premium filhotes, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-filhotes-menino-petita.jpg",
     "image_local": "produtos/linha-premium-filhotes-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-filhotes/",
-    "size_kb": 41.9
+    "size_kb": 41.9,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-filhotes",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-petit",
     "nome": "petit-cab",
-    "descricao": "",
+    "descricao": "petit-cab da linha linha premium petit, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/petit-cab.jpg",
     "image_local": "produtos/linha-premium-petit-petit-cab.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 28.5
+    "size_kb": 28.5,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-petit",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-petit",
     "nome": "Copo Treinamento",
-    "descricao": "",
+    "descricao": "Copo Treinamento ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-copo-treinamento.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 41.9
+    "size_kb": 41.9,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-petit",
     "nome": "Caneca c/ Alça",
-    "descricao": "",
+    "descricao": "Caneca c/ Alça ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-caneca-c-alca.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 41.9
+    "size_kb": 41.9,
+    "technical_specs": {
+      "tipo": "Caneca de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Sim",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-petit",
     "nome": "Kit Refeição",
-    "descricao": "",
+    "descricao": "Kit Refeição da linha linha premium petit, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 49.2
+    "size_kb": 49.2,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-petit",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-petit",
     "nome": "Kit Banho",
-    "descricao": "",
+    "descricao": "Kit Banho da linha linha premium petit, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-kit-banho.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 67.5
+    "size_kb": 67.5,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-petit",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-premium-petit",
     "nome": "Escova e Pente",
-    "descricao": "",
+    "descricao": "Escova e Pente da linha linha premium petit, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-petit-menino-petita.jpg",
     "image_local": "produtos/linha-premium-petit-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-premium-petit/",
-    "size_kb": 44
+    "size_kb": 44,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-premium-petit",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-plus",
     "nome": "plus-cab",
-    "descricao": "",
+    "descricao": "plus-cab da linha linha plus, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/plus-cab.jpg",
     "image_local": "produtos/linha-plus-plus-cab.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 21.3
+    "size_kb": 21.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-plus",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-plus",
     "nome": "Copo Treinamento",
-    "descricao": "",
+    "descricao": "Copo Treinamento ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-treinamento-linha-plus-menino-petita.jpg",
     "image_local": "produtos/linha-plus-copo-treinamento.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 37.8
+    "size_kb": 37.8,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-plus",
     "nome": "Caneca c/ Alça",
-    "descricao": "",
+    "descricao": "Caneca c/ Alça ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-plus-menino-petita.jpg",
     "image_local": "produtos/linha-plus-caneca-c-alca.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 44.1
+    "size_kb": 44.1,
+    "technical_specs": {
+      "tipo": "Caneca de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Sim",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-plus",
     "nome": "Kit Refeição",
-    "descricao": "",
+    "descricao": "Kit Refeição da linha linha plus, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-refeicao-linha-plus-menino-petita.jpg",
     "image_local": "produtos/linha-plus-kit-refeicao.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 51.7
+    "size_kb": 51.7,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-plus",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-plus",
     "nome": "Kit Banho",
-    "descricao": "",
+    "descricao": "Kit Banho da linha linha plus, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-kit-banho-linha-plus-menino-petita.jpg",
     "image_local": "produtos/linha-plus-kit-banho.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 71.9
+    "size_kb": 71.9,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-plus",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-plus",
     "nome": "Escova e Pente",
-    "descricao": "",
+    "descricao": "Escova e Pente da linha linha plus, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-escova-pente-linha-plus-menino-petita.jpg",
     "image_local": "produtos/linha-plus-escova-e-pente.jpg",
     "source_url": "https://petita.com.br/linha-plus/",
-    "size_kb": 42.9
+    "size_kb": 42.9,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-plus",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "refeicao-cab",
-    "descricao": "",
+    "descricao": "refeicao-cab da linha linha refeicao, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/refeicao-cab.jpg",
     "image_local": "produtos/linha-refeicao-refeicao-cab.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 31.5
+    "size_kb": 31.5,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-refeicao",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Copo Treinamento Color Azul",
-    "descricao": "",
+    "descricao": "Copo Treinamento Color Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-copo-treinamento-color-azul-petita.jpg",
     "image_local": "produtos/linha-refeicao-copo-treinamento-color-azul.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 36.9
+    "size_kb": 36.9,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Copo Treinamento Cristal Azul",
-    "descricao": "",
+    "descricao": "Copo Treinamento Cristal Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-copo-treinamento-cristal-azul-petita.jpg",
     "image_local": "produtos/linha-refeicao-copo-treinamento-cristal-azul.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 72.2
+    "size_kb": 72.2,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Copo Treinamento Cristal Rosa",
-    "descricao": "",
+    "descricao": "Copo Treinamento Cristal Rosa ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-copo-treinamento-cristal-rosa-petita.jpg",
     "image_local": "produtos/linha-refeicao-copo-treinamento-cristal-rosa.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 39.8
+    "size_kb": 39.8,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Kit Refeição Menino",
-    "descricao": "",
+    "descricao": "Kit Refeição Menino da linha linha refeicao, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-kit-refeicao-menino-petita.jpg",
     "image_local": "produtos/linha-refeicao-kit-refeicao-menino.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 63.3
+    "size_kb": 63.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-refeicao",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Copo Treinamento 2 em 1 Azul",
-    "descricao": "",
+    "descricao": "Copo Treinamento 2 em 1 Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-copo-treinamento-2em1-azul-petita.jpg",
     "image_local": "produtos/linha-refeicao-copo-treinamento-2-em-1-azul.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 62.5
+    "size_kb": 62.5,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Copo Treinamento 2 em 1 Rosa",
-    "descricao": "",
+    "descricao": "Copo Treinamento 2 em 1 Rosa ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-refeicao-copo-treinamento-2em1-rosa-petita.jpg",
     "image_local": "produtos/linha-refeicao-copo-treinamento-2-em-1-rosa.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 60.8
+    "size_kb": 60.8,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Caneca com Alça Azul",
-    "descricao": "",
+    "descricao": "Caneca com Alça Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-refeicao-menino-petita.jpg",
     "image_local": "produtos/linha-refeicao-caneca-com-alca-azul.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 38.1
+    "size_kb": 38.1,
+    "technical_specs": {
+      "tipo": "Caneca de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Sim",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-refeicao",
     "nome": "Caneca com Alça Rosa",
-    "descricao": "",
+    "descricao": "Caneca com Alça Rosa ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-copo-com-alca-linha-refeicao-menina-petita.jpg",
     "image_local": "produtos/linha-refeicao-caneca-com-alca-rosa.jpg",
     "source_url": "https://petita.com.br/linha-refeicao/",
-    "size_kb": 34.1
+    "size_kb": 34.1,
+    "technical_specs": {
+      "tipo": "Caneca de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Sim",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "acessorios-cab",
-    "descricao": "",
+    "descricao": "acessorios-cab da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/acessorios-cab.jpg",
     "image_local": "produtos/acessorios-acessorios-cab.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 25.2
+    "size_kb": 25.2,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Prendedor de Chupeta Boton Azul",
-    "descricao": "",
+    "descricao": "Prendedor de Chupeta Boton Azul com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-prendedor-de-chupeta-azul-petita.jpg",
     "image_local": "produtos/acessorios-prendedor-de-chupeta-boton-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 44.6
+    "size_kb": 44.6,
+    "technical_specs": {
+      "tipo": "Chupeta",
+      "bico": "Ortodôntico",
+      "material": "PP + Silicone medicinal",
+      "idade": "0-6 meses",
+      "peso_g": 15,
+      "dimensoes_cm": "6 × 4 × 3",
+      "ventilada": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Prendedor de Chupeta Boton Rosa",
-    "descricao": "",
+    "descricao": "Prendedor de Chupeta Boton Rosa com bico ortodôntico em silicone medicinal, desenvolvida para bebês a partir de 0-6 meses. Leve e atóxica, atende às normas do INMETRO e proporciona conforto e segurança nos momentos de relaxamento.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-prendedor-de-chupeta-rosa-petita.jpg",
     "image_local": "produtos/acessorios-prendedor-de-chupeta-boton-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 25.3
+    "size_kb": 25.3,
+    "technical_specs": {
+      "tipo": "Chupeta",
+      "bico": "Ortodôntico",
+      "material": "PP + Silicone medicinal",
+      "idade": "0-6 meses",
+      "peso_g": 15,
+      "dimensoes_cm": "6 × 4 × 3",
+      "ventilada": "Não",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Protetor de Seio",
-    "descricao": "",
+    "descricao": "Protetor de Seio da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-protetor-de-seio-petita.jpg",
     "image_local": "produtos/acessorios-protetor-de-seio.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 24.9
+    "size_kb": 24.9,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Kit Manicure Azul",
-    "descricao": "",
+    "descricao": "Kit Manicure Azul da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-kit-manicure-azul-petita.jpg",
     "image_local": "produtos/acessorios-kit-manicure-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 42.8
+    "size_kb": 42.8,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Kit Manicure Rosa",
-    "descricao": "",
+    "descricao": "Kit Manicure Rosa da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-kit-manicure-rosa-petita.jpg",
     "image_local": "produtos/acessorios-kit-manicure-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 41.3
+    "size_kb": 41.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Massageador de Gengiva Dental Azul",
-    "descricao": "",
+    "descricao": "Massageador de Gengiva Dental Azul da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-massageador-de-gengiva-dental-azul-petita.jpg",
     "image_local": "produtos/acessorios-massageador-de-gengiva-dental-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 28.6
+    "size_kb": 28.6,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Massageador de Gengiva Dental Rosa",
-    "descricao": "",
+    "descricao": "Massageador de Gengiva Dental Rosa da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-massageador-de-gengiva-dental-rosa-petita.jpg",
     "image_local": "produtos/acessorios-massageador-de-gengiva-dental-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 28.4
+    "size_kb": 28.4,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Escova e Pente Azul",
-    "descricao": "",
+    "descricao": "Escova e Pente Azul da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-e-pente-azul-petita.jpg",
     "image_local": "produtos/acessorios-escova-e-pente-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 46.6
+    "size_kb": 46.6,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Escova e Pente Rosa",
-    "descricao": "",
+    "descricao": "Escova e Pente Rosa da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-e-pente-rosa-petita.jpg",
     "image_local": "produtos/acessorios-escova-e-pente-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 39.9
+    "size_kb": 39.9,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Escova Dupla Ação Limpa Bicos e Mamadeira Azul",
-    "descricao": "",
+    "descricao": "Escova Dupla Ação Limpa Bicos e Mamadeira Azul da linha acessorios, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-escova-dupla-acao-bico-e-mamadeira-azul-petita.jpg",
     "image_local": "produtos/acessorios-escova-dupla-acao-limpa-bicos-e-mamadeira-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 37.5
+    "size_kb": 37.5,
+    "technical_specs": {
+      "tipo": "Mamadeira",
+      "capacidade_ml": 240,
+      "bico": "Silicone",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 140,
+      "dimensoes_cm": "18 × 5 × 5",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Kit Banho Azul",
-    "descricao": "",
+    "descricao": "Kit Banho Azul da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-kit-banho-azul-petita.jpg",
     "image_local": "produtos/acessorios-kit-banho-azul.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 63.7
+    "size_kb": 63.7,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Kit Banho Rosa",
-    "descricao": "",
+    "descricao": "Kit Banho Rosa da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-kit-banho-rosa-petita-1.jpg",
     "image_local": "produtos/acessorios-kit-banho-rosa.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 59.4
+    "size_kb": 59.4,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "acessorios",
     "nome": "Expositor Grande Chão",
-    "descricao": "",
+    "descricao": "Expositor Grande Chão da linha acessorios, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-acessorios-expositor-petita.jpg",
     "image_local": "produtos/acessorios-expositor-grande-chao.jpg",
     "source_url": "https://petita.com.br/acessorios/",
-    "size_kb": 36.4
+    "size_kb": 36.4,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "acessorios",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "anplas-cab",
-    "descricao": "",
+    "descricao": "anplas-cab da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/anplas-cab.jpg",
     "image_local": "produtos/linha-anplas-anplas-cab.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 18.3
+    "size_kb": 18.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Copo Treinamento Cristal Azul",
-    "descricao": "",
+    "descricao": "Copo Treinamento Cristal Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-copo-treinamento-cristal-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-copo-treinamento-cristal-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 40.4
+    "size_kb": 40.4,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Copo Treinamento Cristal Rosa",
-    "descricao": "",
+    "descricao": "Copo Treinamento Cristal Rosa ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-copo-treinamento-cristal-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-copo-treinamento-cristal-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 40.7
+    "size_kb": 40.7,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Copo Treinamento Azul",
-    "descricao": "",
+    "descricao": "Copo Treinamento Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-copo-treinamentol-azul-petita-1.jpg",
     "image_local": "produtos/linha-anplas-copo-treinamento-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 41.4
+    "size_kb": 41.4,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Copo Treinamento Pink",
-    "descricao": "",
+    "descricao": "Copo Treinamento Pink ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-copo-treinamentol-pink-petita-1.jpg",
     "image_local": "produtos/linha-anplas-copo-treinamento-pink.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 40.3
+    "size_kb": 40.3,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Variadas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Redutor de Assento",
-    "descricao": "",
+    "descricao": "Redutor de Assento da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-linha-anplas-redutor-de-assento-petita.jpg",
     "image_local": "produtos/linha-anplas-redutor-de-assento.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 57
+    "size_kb": 57,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Saboneteira Azul",
-    "descricao": "",
+    "descricao": "Saboneteira Azul da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-saboneteira-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-saboneteira-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 41.1
+    "size_kb": 41.1,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Saboneteira Rosa",
-    "descricao": "",
+    "descricao": "Saboneteira Rosa da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-saboneteira-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-saboneteira-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 37.3
+    "size_kb": 37.3,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Copo Cristal com Canudo Retrátil Azul",
-    "descricao": "",
+    "descricao": "Copo Cristal com Canudo Retrátil Azul ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-copo-cristal-canudo-retratil-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-copo-cristal-com-canudo-retratil-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 35.2
+    "size_kb": 35.2,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Copo Cristal com Canudo Retrátil Rosa",
-    "descricao": "",
+    "descricao": "Copo Cristal com Canudo Retrátil Rosa ideal para a fase de transição alimentar. Possui 270 ml de capacidade, bico em silicone antivazamento e formato ergonômico. Recomendada para bebês a partir de 6 meses +.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-copo-cristal-canudo-retratil-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-copo-cristal-com-canudo-retratil-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 38.5
+    "size_kb": 38.5,
+    "technical_specs": {
+      "tipo": "Copo de treinamento",
+      "capacidade_ml": 270,
+      "bico": "Silicone antivazamento",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 100,
+      "dimensoes_cm": "14 × 8 × 8",
+      "alca": "Não",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Porta Leite em Pó Azul",
-    "descricao": "",
+    "descricao": "Porta Leite em Pó Azul da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-porta-leite-em-po-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-porta-leite-em-po-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 39.5
+    "size_kb": 39.5,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Porta Leite em Pó Rosa",
-    "descricao": "",
+    "descricao": "Porta Leite em Pó Rosa da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-porta-leite-em-po-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-porta-leite-em-po-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 30
+    "size_kb": 30,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Prato c/ Tampa, Talher e Ventosa Azul",
-    "descricao": "",
+    "descricao": "Prato c/ Tampa, Talher e Ventosa Azul da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-kit-refeicao-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-prato-c-tampa-talher-e-ventosa-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 37.6
+    "size_kb": 37.6,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Prato c/ Tampa, Talher e Ventosa Rosa",
-    "descricao": "",
+    "descricao": "Prato c/ Tampa, Talher e Ventosa Rosa da linha linha anplas, desenvolvido em Polipropileno (PP) de alta qualidade. Atóxico, livre de BPA e ftalatos, com certificação INMETRO.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-kit-refeicao-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-prato-c-tampa-talher-e-ventosa-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 38.2
+    "size_kb": 38.2,
+    "technical_specs": {
+      "tipo": "Acessório",
+      "material": "Polipropileno (PP)",
+      "peso_g": 30,
+      "linha": "linha-anplas",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira e Bico Azul",
-    "descricao": "",
+    "descricao": "Escova de Mamadeira e Bico Azul da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 32.8
+    "size_kb": 32.8,
+    "technical_specs": {
+      "tipo": "Mamadeira",
+      "capacidade_ml": 240,
+      "bico": "Silicone",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 140,
+      "dimensoes_cm": "18 × 5 × 5",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira e Bico Rosa",
-    "descricao": "",
+    "descricao": "Escova de Mamadeira e Bico Rosa da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 31
+    "size_kb": 31,
+    "technical_specs": {
+      "tipo": "Mamadeira",
+      "capacidade_ml": 240,
+      "bico": "Silicone",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 140,
+      "dimensoes_cm": "18 × 5 × 5",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira e Bico c/ Espuma Azul",
-    "descricao": "",
+    "descricao": "Escova de Mamadeira e Bico c/ Espuma Azul da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-e-bico-c-espuma-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-e-bico-c-espuma-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 32.9
+    "size_kb": 32.9,
+    "technical_specs": {
+      "tipo": "Mamadeira",
+      "capacidade_ml": 240,
+      "bico": "Silicone",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 140,
+      "dimensoes_cm": "18 × 5 × 5",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira c/ Espuma e Cabo Removível Azul",
-    "descricao": "",
+    "descricao": "Escova de Mamadeira c/ Espuma e Cabo Removível Azul da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-c-espuma-cabo-removivel-azul-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-c-espuma-e-cabo-removivel-azul.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 33.2
+    "size_kb": 33.2,
+    "technical_specs": {
+      "tipo": "Mamadeira",
+      "capacidade_ml": 240,
+      "bico": "Silicone",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 140,
+      "dimensoes_cm": "18 × 5 × 5",
+      "cor": "Azul",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   },
   {
     "linha": "linha-anplas",
     "nome": "Escova de Mamadeira c/ Espuma e Cabo Removível Rosa",
-    "descricao": "",
+    "descricao": "Escova de Mamadeira c/ Espuma e Cabo Removível Rosa da linha linha anplas, com capacidade de 240 ml e bico silicone. Indicada para a faixa etária 6 meses +, é fabricada em Polipropileno (PP), livre de BPA e ftalatos. Garante alimentação segura, prática e confortável para o bebê.",
     "image_url": "https://petita.com.br/wp-content/uploads/2020/02/produtos-anplas-escova-de-mamadeira-c-espuma-cabo-removivel-rosa-petita.jpg",
     "image_local": "produtos/linha-anplas-escova-de-mamadeira-c-espuma-e-cabo-removivel-rosa.jpg",
     "source_url": "https://petita.com.br/linha-anplas/",
-    "size_kb": 32.9
+    "size_kb": 32.9,
+    "technical_specs": {
+      "tipo": "Mamadeira",
+      "capacidade_ml": 240,
+      "bico": "Silicone",
+      "material": "Polipropileno (PP)",
+      "idade": "6 meses +",
+      "peso_g": 140,
+      "dimensoes_cm": "18 × 5 × 5",
+      "cor": "Rosa",
+      "observacoes": "Livre de BPA · Livre de Ftalatos · Atóxico · Certificação INMETRO"
+    }
   }
 ]
